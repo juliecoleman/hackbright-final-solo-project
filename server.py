@@ -83,7 +83,7 @@ def results():
         city_id=city_id, weather_dict=weather_dict, precipitation_values=precipitation_values,
         rain_days_values=rain_days_values, temp_min_values=temp_min_values,
         temp_max_values=temp_max_values, total_precipition=total_precipition,
-        number_rain_days=number_rain_days)
+        number_rain_days=number_rain_days, min_temp=min_temp, max_temp=max_temp)
 
     #Note this works for Amarillo but not San Jose. Need to filter city list
     #results to only be for US and/or have file still work if no values
