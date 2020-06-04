@@ -6,9 +6,9 @@ Installation
 5. activate the virtual environment
 6. pip install the requirements
 7. source secret.sh
-8. python3 .... to create tables and seed the database
+8. python3 seed_database.py to create tables and seed the database
 9. python3 server.py to start the server
-10. open the browser
+10. open the browser at http://localhost:5000
 
 
 Tech Stack
