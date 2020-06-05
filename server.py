@@ -27,6 +27,8 @@ def results():
     """View results of search."""
 
     city = request.args.get('city')
+    shade_ok = request.args.get('shade_ok')
+    soil_type = request.args.get('soil_type')
 
     res = requests.get(
         f'https://api.meteostat.net/v1/stations/search?q={city}&key={key_1}')
@@ -79,11 +81,14 @@ def results():
     max_temp = (sorted_temp_max_values[-1] * (9/5) + 32)
     # #Note converted to Fahrenheit from Celsius
 
+    crop_list = crud.get_crop_recommendations(min_temp, shade_ok, soil_type)
+
     return render_template('results.html', city=city, city_data=city_data, city_list=city_list,
         city_id=city_id, weather_dict=weather_dict, precipitation_values=precipitation_values,
         rain_days_values=rain_days_values, temp_min_values=temp_min_values,
         temp_max_values=temp_max_values, total_precipition=total_precipition,
-        number_rain_days=number_rain_days, min_temp=min_temp, max_temp=max_temp)
+        number_rain_days=number_rain_days, min_temp=min_temp, max_temp=max_temp,
+        crop_list=crop_list)
 
     #Note this works for Amarillo but not San Jose. Need to filter city list
     #results to only be for US and/or have file still work if no values

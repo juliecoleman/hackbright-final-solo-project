@@ -47,6 +47,8 @@ class Crop(db.Model):
     crop_storage_use = db.Column(db.String)
     crop_image_url = db.Column(db.String)
 
+    condition = db.relationship('CropCondition')
+
     def __repr__(self):
         return f'<Crop crop_id={self.crop_id} crop_name={self.crop_name}>'
 
@@ -62,6 +64,8 @@ class CropCondition(db.Model):
     highest_min_temp = db.Column(db.Integer)
     shade_ok = db.Column(db.String, nullable=False, default="False")
     soil_type = db.Column(db.String)
+
+    crop = db.relationship('Crop')
 
     def __repr__(self):
         return f'<CropCondition condition_id={self.condition_id} crop_name={self.crop_name}>'

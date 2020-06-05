@@ -4,7 +4,7 @@
             "crop name": "tomatoes",
             "lowest min temp": "-40",
             "highest min temp": "40",
-            "shade ok": "False",
+            "shade ok": "no",
             "soil type": "loamy"
         },
         {   
@@ -12,7 +12,7 @@
             "crop name": "basil",
             "lowest min temp": "-40",
             "highest min temp": "40",
-            "shade ok": "False",
+            "shade ok": "no",
             "soil type": "loamy"
         },
         {
@@ -20,7 +20,7 @@
             "crop name": "lettuce",
             "lowest min temp": "-40",
             "highest min temp": "40",
-            "shade ok": "True",
+            "shade ok": "yes",
             "soil type": "loamy"
         },
         {
@@ -28,7 +28,7 @@
             "crop name": "carrots",
             "lowest min temp": "-40",
             "highest min temp": "40",
-            "shade ok": "False",
+            "shade ok": "no",
             "soil type": "sandy"
         },
         {
@@ -36,7 +36,7 @@
             "crop name": "asparagus",
             "lowest min temp": "-40",
             "highest min temp": "30",
-            "shade ok": "True",
+            "shade ok": "yes",
             "soil type": "sandy"
         }
 ]
