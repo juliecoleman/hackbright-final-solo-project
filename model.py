@@ -50,10 +50,25 @@ class Crop(db.Model):
     def __repr__(self):
         return f'<Crop crop_id={self.crop_id} crop_name={self.crop_name}>'
 
+class CropCondition(db.Model):
+    """Conditions for each crop."""
 
-# class Favorite_crops(db.Model):
+    __tablename__ = 'crop_conditions'
 
-# class Past_query(db.Model):
+    condition_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    crop_id = db.Column(db.Integer, db.ForeignKey('crops.crop_id'))
+    crop_name = db.Column(db.String)
+    lowest_min_temp = db.Column(db.Integer)
+    highest_min_temp = db.Column(db.Integer)
+    shade_ok = db.Column(db.String, nullable=False, default="False")
+    soil_type = db.Column(db.String)
+
+    def __repr__(self):
+        return f'<CropCondition condition_id={self.condition_id} crop_name={self.crop_name}>'
+
+# class FavoriteCrops(db.Model):
+
+# class PastQuery(db.Model):
 
 def connect_to_db(flask_app, db_uri='postgresql:///cropweather', echo=True):
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri

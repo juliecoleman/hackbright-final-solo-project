@@ -45,3 +45,22 @@ for crop in crop_data:
 
     crops_in_db.append(db_crop)
 
+
+with open('data/crop_conditions.json') as f:
+    crop_condition_data = json.loads(f.read())
+
+crop_conditions_in_db = []
+
+for crop_condition in crop_condition_data:
+    crop_id = crop_condition['id']
+    crop_name = crop_condition['crop name']
+    lowest_min_temp = crop_condition['lowest min temp']
+    highest_min_temp = crop_condition['highest min temp']
+    shade_ok = crop_condition['shade ok']
+    soil_type = crop_condition['soil type']
+
+    db_crop_condition = crud.create_crop_conditions(crop_id,
+        crop_name, lowest_min_temp, highest_min_temp, shade_ok, soil_type)
+
+    crop_conditions_in_db.append(db_crop_condition)
+

@@ -1,0 +1,42 @@
+[
+        {   
+            "id": "1",
+            "crop name": "tomatoes",
+            "lowest min temp": "-40",
+            "highest min temp": "40",
+            "shade ok": "False",
+            "soil type": "loamy"
+        },
+        {   
+            "id": "2",
+            "crop name": "basil",
+            "lowest min temp": "-40",
+            "highest min temp": "40",
+            "shade ok": "False",
+            "soil type": "loamy"
+        },
+        {
+            "id": "3",
+            "crop name": "lettuce",
+            "lowest min temp": "-40",
+            "highest min temp": "40",
+            "shade ok": "True",
+            "soil type": "loamy"
+        },
+        {
+            "id": "4",
+            "crop name": "carrots",
+            "lowest min temp": "-40",
+            "highest min temp": "40",
+            "shade ok": "False",
+            "soil type": "sandy"
+        },
+        {
+            "id": "5",
+            "crop name": "asparagus",
+            "lowest min temp": "-40",
+            "highest min temp": "30",
+            "shade ok": "True",
+            "soil type": "sandy"
+        }
+]
