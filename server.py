@@ -55,6 +55,16 @@ def login_gardener():
 
     return redirect('/')
 
+@app.route('/logout')
+def logout_gardener():
+    """Log out gardener user."""
+
+    session.pop('gardener_id', None)
+
+    flash('You are logged out.')
+
+    return redirect('/')
+
 @app.route('/results')
 def results():
     """View results of search."""

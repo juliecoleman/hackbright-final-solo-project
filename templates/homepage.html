@@ -39,9 +39,16 @@
       <input type="submit">
     </form>
   </section>
+  {% endif %}
 
   <br></br>
   <br></br>
+  
+
+  {%if "gardener_id" in session %}
+  <form action="/logout">
+    <button type="submit">Log out</button>
+  </form>
   {% endif %}
 
   <section>
