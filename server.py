@@ -13,14 +13,47 @@ import os
 key_1 = os.environ['API_KEY_1']
 
 app = Flask(__name__)
+app.secret_key = "gardens"
 app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def homepage():
     """View homepage."""
 
-
     return render_template('homepage.html')
+
+@app.route('/create-gardener', methods=['POST'])
+def register_gardener():
+    """Create a new gardener user."""
+
+    username = request.form.get('username')
+    password = request.form.get('password')
+
+    gardener = crud.get_gardener_by_username(username)
+    if gardener:
+        flash('Username already taken. Please enter a different username.')
+    else:
+        crud.create_gardener(username, password)
+        flash('Your Garden Knowledge account is created. Now please log in.')
+
+    return redirect('/')
+
+@app.route('/login', methods=['POST'])
+def login_gardener():
+    """Log in gardener user."""
+
+    username = request.form.get('username')
+    password_to_check = request.form.get('password')
+
+    gardener = crud.get_gardener_by_username(username)
+
+    if password_to_check == gardener.password:
+       session['gardener_id'] = gardener.gardener_id
+       flash('You are logged in and ready to save your searches and favorites!')
+    else:
+       flash('Error. Incorrect password or username.')
+
+    return redirect('/')
 
 @app.route('/results')
 def results():

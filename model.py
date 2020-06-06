@@ -5,24 +5,23 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 
-# class User(db.Model):
-#     """A user."""
+class Gardener(db.Model):
+     """A user who is gardener."""
 
-#     __tablename__ = 'users'
+     __tablename__ = 'gardeners'
 
-#     user_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-#     username = db.Column(db.String, unique=True)
-#     password = db.Column(db.String)
+     gardener_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+     username = db.Column(db.String, unique=True)
+     password = db.Column(db.String)
 
-#     # ratings = a list of Rating objects
+     # crop = db.relationship('Crop')
 
-#     def __repr__(self):
-#         return f'<User user_id={self.user_id} username={self.username}>'
+     def __repr__(self):
+         return f'<User user_id={self.user_id} username={self.username}>'
 
 
-# class User_query(db.Model):
+# class Gardener_query(db.Model):
 
-# class Climate_info(db.Model):
 
 class Crop(db.Model):
     """A crop."""
@@ -30,6 +29,7 @@ class Crop(db.Model):
     __tablename__ = 'crops'
 
     crop_id = db.Column(db.Integer, primary_key=True)
+    # gardener_id = db.Column(db.Integer, db.ForeignKey('gardener.gardener_id'))
     crop_name = db.Column(db.String)
     crop_description = db.Column(db.String)
     crop_sun = db.Column(db.String)
@@ -48,6 +48,7 @@ class Crop(db.Model):
     crop_image_url = db.Column(db.String)
 
     condition = db.relationship('CropCondition')
+    # gardener = db.relationship('Gardener')
 
     def __repr__(self):
         return f'<Crop crop_id={self.crop_id} crop_name={self.crop_name}>'

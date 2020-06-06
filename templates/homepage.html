@@ -5,10 +5,47 @@
 
 </head>
 <body>
+  {% for msg in get_flashed_messages() %}
+    <ul class="flashes">
+      {{ msg }}
+    </ul>
+  {% endfor %}
   <h1>Welcome to Garden Knowledge!</h1>
 
+  <br></br>
+
+  {% if "gardener_id" not in session %}
+  <section>
+    <h2>Log in</h2>
+    <form action = "/login" method="POST">
+      <label for="username">username</label>
+      <input type = "text" id="username" name="username">
+
+      <label for="password">password</label>
+      <input type = "text" id="password" name="password">   
+
+      <input type="submit">
+    </form>
+
+    <h1>OR</h1>
+    <h2>Create account if new here</h2>
+    <form action = "/create-gardener" method="POST">
+      <label for="username">username</label>
+      <input type = "text" id="username" name="username">
+
+      <label for="password">password</label>
+      <input type = "text" id="password" name="password">   
+
+      <input type="submit">
+    </form>
+  </section>
+
+  <br></br>
+  <br></br>
+  {% endif %}
 
   <section>
+    <h2>Begin your search</h2>
     <form action="/results" id="query">
       <label for="city">Please enter your city</label>
       <input type="text" id="city-field" name="city">
@@ -30,7 +67,7 @@
       <button type="submit">Search</button>
     </form>
   </section>
-
+  
 
 
 </body>
