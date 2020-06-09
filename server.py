@@ -65,6 +65,18 @@ def logout_gardener():
 
     return redirect('/')
 
+@app.route('/create-favorite', methods=['POST'])
+def add_favorite():
+    """Add a new favorite crop to the 'database'."""
+    
+    crop_id = request.form.get('crop_id')
+
+    gardener_id = session['gardener_id']
+
+    favorite_crop = crud.save_favorite_crop(gardener_id, crop_id)
+
+    return redirect('/results')
+
 @app.route('/results')
 def results():
     """View results of search."""
@@ -131,7 +143,7 @@ def results():
         rain_days_values=rain_days_values, temp_min_values=temp_min_values,
         temp_max_values=temp_max_values, total_precipition=total_precipition,
         number_rain_days=number_rain_days, min_temp=min_temp, max_temp=max_temp,
-        crop_list=crop_list)
+        cropList=crop_list)
 
     #Note this works for Amarillo but not San Jose. Need to filter city list
     #results to only be for US and/or have file still work if no values

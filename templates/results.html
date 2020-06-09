@@ -3,11 +3,34 @@
 <head>
   <title>Homepage</title>
 
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
+></script>
+
+
 </head>
 <body>
   <h1>Here are your results!</h1>
 
-  <h2>{{crop_list}}</h2>
+  <div id="app"></div>
+
+  <h2>{{cropList}}</h2>
+
+  {% for crop in cropList %}
+    <p>
+      Name: {{crop['name']}}
+      <br></br>
+      How to water: {{crop['watering']}}
+      <br></br>
+      Crop ID: {{crop['crop_id']}}
+      <form action="/create-favorite" method="POST">
+        <input type="hidden" name="crop_id" value="{{crop['crop_id']}}" />
+        <button type="submit">Add to favorites</button>
+      </form>
+    </p>
+
+  {% endfor%}
 
 {#   <h2>{{city}}</h2>
 
@@ -36,6 +59,8 @@
   <h6>{{weather_dict}}</h5> #}
 
 
-
+{% block js %}
+  {# <script src="/static/js/results.jsx" type="text/jsx"></script> #}
+{% endblock %}
 </body>
 </html>
