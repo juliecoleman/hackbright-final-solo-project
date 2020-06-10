@@ -1,6 +1,6 @@
 """Server for garden knowledge app."""
 
-from flask import (Flask, render_template, request, flash, session,
+from flask import (Flask, render_template, request, jsonify, flash, session,
                    redirect)
 
 from model import connect_to_db
@@ -68,14 +68,24 @@ def logout_gardener():
 @app.route('/create-favorite', methods=['POST'])
 def add_favorite():
     """Add a new favorite crop to the 'database'."""
-    
+
     crop_id = request.form.get('crop_id')
 
     gardener_id = session['gardener_id']
 
-    favorite_crop = crud.save_favorite_crop(gardener_id, crop_id)
+    favorite_crop = crud.create_favorite_crop(gardener_id, crop_id)
 
-    return redirect('/results')
+    return redirect('/favorites')
+
+@app.route('/favorites')
+def favorites():
+    """View all favorite crops."""
+
+    gardener_id = session['gardener_id']
+
+    crop_favorite_list = crud.get_crop_favorites(gardener_id)
+
+    return render_template('favorites.html', crop_favorite_list=crop_favorite_list)
 
 @app.route('/results')
 def results():

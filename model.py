@@ -19,21 +19,6 @@ class Gardener(db.Model):
      def __repr__(self):
          return f'<User user_id={self.user_id} username={self.username}>'
 
-class FavoriteCrop(db.Model):
-    """A gardener user's saved favorite crops."""
-
-    __tablename__ = 'favorite_crops'
-
-    favorite_id = db.Column(db.Integer, primary_key=True)
-    gardener_id = db.Column(db.Integer, db.ForeignKey('gardeners.gardener_id'))
-    crop_id = db.Column(db.Integer, db.ForeignKey('crops.crop_id'))
-
-    gardener = db.relationship('Gardener')
-    crop = db.relationship('Crop')
-
-    def __repr__(self):
-        return f'<FavoriteCrop gardener_id={self.gardener_id} crop_id={self.crop_id}>'
-
 
 class Crop(db.Model):
     """A crop."""
@@ -85,6 +70,20 @@ class CropCondition(db.Model):
     def __repr__(self):
         return f'<CropCondition condition_id={self.condition_id} crop_name={self.crop_name}>'
 
+class FavoriteCrop(db.Model):
+    """A gardener user's saved favorite crops."""
+
+    __tablename__ = 'favorite_crops'
+
+    favorite_id = db.Column(db.Integer, primary_key=True)
+    gardener_id = db.Column(db.Integer, db.ForeignKey('gardeners.gardener_id'))
+    crop_id = db.Column(db.Integer, db.ForeignKey('crops.crop_id'))
+
+    gardener = db.relationship('Gardener')
+    crop = db.relationship('Crop')
+
+    def __repr__(self):
+        return f'<FavoriteCrop gardener_id={self.gardener_id} crop_id={self.crop_id}>'
 
 
 def connect_to_db(flask_app, db_uri='postgresql:///cropweather', echo=True):

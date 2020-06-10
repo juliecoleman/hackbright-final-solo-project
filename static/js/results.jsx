@@ -1,7 +1,6 @@
 class CropList extends React.Component {
 
   render() {
-
     return (
       <div>
         <p>'Test'</p>
@@ -20,34 +19,36 @@ class GetCropList extends React.Component {
   }
 
   updateCropList(response) {
-    const cropList = response.cropList
+      const cropList = response.cropList
 
-    this.setState({ cropList: cropList});
+      this.setState({ cropList: cropList});
   }
 
   getCropList() {
+    //Note I can't get the below to work because not getting a jsonified dictionary!!!
     fetch('/results')
- 
-    .then(this.updateCropList);
+    .then(response => response.json())
+    .then(this.updateCards);
   }
 
   componentDidMount() {
     this.getCropList();
-  }
+    }
 
   render() {
-    // const recommendedCropList = [];
+    const recommendedCropList = [];
 
-    // for (const crop of this.state.cropList) {
-    // recommendedCropList.push(
-    //   <CropList
-    //   key={this.state.cropList}
-    //   cropList={this.state.cropList}
-    //   />
-    // );
-  // }
+    for (const crop of this.state.cropList) {
+      recommendedCropList.push(
+        <CropList
+          key={crop.name}
+          name={crop.name}
+        />
+      );
+    }
 
-    return ({cropList}
+    return (
+      <div>{recommendedCropList}</div>
     );
   }
 }
