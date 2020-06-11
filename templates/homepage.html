@@ -39,16 +39,17 @@
       <input type="submit">
     </form>
   </section>
+  <br></br>
+  <br></br>
   {% endif %}
-
-  <br></br>
-  <br></br>
   
 
   {%if "gardener_id" in session %}
   <form action="/logout">
     <button type="submit">Log out</button>
   </form>
+  <br></br>
+  <br></br>
   {% endif %}
 
   <section>
@@ -75,7 +76,14 @@
     </form>
   </section>
   
-
+  {%if "gardener_id" in session %}
+    <br></br>
+    <br></br>
+    <h2>Ready to see all your favorites?</h2>
+    <form action="/favorites">
+      <button type="submit">Go to favorites</button>
+    </form>
+  {% endif %}
 
 </body>
 </html>

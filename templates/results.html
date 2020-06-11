@@ -3,37 +3,50 @@
 <head>
   <title>Homepage</title>
 
-  <script crossorigin src="https://unpkg.com/react@16/umd/
+{#   <script crossorigin src="https://unpkg.com/react@16/umd/
   react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/
   react-dom.development.js"></script>
   <script crossorigin src="https://cdnjs.cloudflare.com/ajax/
   libs/babel-standalone/6.26.0/babel.js"></script>
+ #}
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+  crossorigin="anonymous"></script>
 
 
 </head>
 <body>
-  <h1>Here are your results!</h1>
+  <h2>Here are your results!</h2>
 
-  <div id="app"></div>
+{#   <div id="app"></div> #}
 
-  <h2>{{cropList}}</h2>
+  <h5>{{cropList}}</h5>
 
   {% for crop in cropList %}
     <p>
+
       Name: {{crop['name']}}
       <br></br>
       How to water: {{crop['watering']}}
       <br></br>
       Crop ID: {{crop['crop_id']}}
-      <form action="/create-favorite" method="POST">
-        <input type="hidden" name="crop_id" value="{{crop['crop_id']}}" />
+
+      <form action="/create-favorite" method="POST" class="add-favorite">
+        <input type="hidden" name="crop_id" value="{{crop['crop_id']}}" id="crop_id-field"/>
         <button type="submit">Add to favorites</button>
       </form>
+      
     </p>
-
+    <br></br>
   {% endfor%}
 
+  <h2>Ready to see all your favorites?</h2>
+  <form action="/favorites">
+    <button type="submit">Go to favorites</button>
+  </form>
+{# 
+class="add-favorite" #}
 {#   <h2>{{city}}</h2>
 
   <h3>{{city_data}}</h3>
@@ -60,9 +73,9 @@
 
   <h6>{{weather_dict}}</h5> #}
 
-
-{% block js %}
-  <script src="/static/js/results.jsx" type="text/jsx"></script> #}
-{% endblock %}
+  <script src="/static/js/results.js"></script>
+{# {% block js %} #}
+  {# <script src="/static/js/results.jsx" type="text/jsx"></script> #}
+{# {% endblock %} #}
 </body>
 </html>

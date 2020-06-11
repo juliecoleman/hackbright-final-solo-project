@@ -76,8 +76,8 @@ class FavoriteCrop(db.Model):
     __tablename__ = 'favorite_crops'
 
     favorite_id = db.Column(db.Integer, primary_key=True)
-    gardener_id = db.Column(db.Integer, db.ForeignKey('gardeners.gardener_id'))
-    crop_id = db.Column(db.Integer, db.ForeignKey('crops.crop_id'))
+    gardener_id = db.Column(db.Integer, db.ForeignKey('gardeners.gardener_id'), nullable=False)
+    crop_id = db.Column(db.Integer, db.ForeignKey('crops.crop_id'), nullable=False)
 
     gardener = db.relationship('Gardener')
     crop = db.relationship('Crop')

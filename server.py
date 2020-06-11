@@ -2,6 +2,7 @@
 
 from flask import (Flask, render_template, request, jsonify, flash, session,
                    redirect)
+from flask_debugtoolbar import DebugToolbarExtension
 
 from model import connect_to_db
 import crud
@@ -13,8 +14,9 @@ import os
 key_1 = os.environ['API_KEY_1']
 
 app = Flask(__name__)
-app.secret_key = "gardens"
+app.secret_key = "gardenslollol"
 app.jinja_env.undefined = StrictUndefined
+app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 
 @app.route('/')
 def homepage():
@@ -70,12 +72,17 @@ def add_favorite():
     """Add a new favorite crop to the 'database'."""
 
     crop_id = request.form.get('crop_id')
-
+    print('PRINTING CROP ID********', crop_id)
     gardener_id = session['gardener_id']
 
-    favorite_crop = crud.create_favorite_crop(gardener_id, crop_id)
+    already_favorite_crop = crud.check_crop_favorites(crop_id, gardener_id)
+    print('PRINTING IF ALREADY FAVORITE*******', already_favorite_crop)
+    if already_favorite_crop:
+        return "This crop has already been added to favorites."
 
-    return redirect('/favorites')
+    else:
+        favorite_crop = crud.create_favorite_crop(gardener_id, crop_id)
+        return "Added to favorites!"
 
 @app.route('/favorites')
 def favorites():
@@ -162,4 +169,6 @@ def results():
 
 if __name__ == '__main__':
     connect_to_db(app)
+    app.debug = True
+    DebugToolbarExtension(app)
     app.run(host='0.0.0.0', debug=True)

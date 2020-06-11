@@ -7,7 +7,19 @@
 <body>
   <h1>Here are your favorites!</h1>
 
-  <h2>{{crop_favorite_list}}</h2>
+  {% for crop in crop_favorite_list %}
+    <p>
+      Name: {{crop['name']}}
+      <br></br>
+      How to water: {{crop['watering']}}
+      <br></br>
+      Crop ID: {{crop['crop_id']}}
+      
+    </p>
+    <br></br>
+  {% endfor%}
+
+<!--   <h2>{{crop_favorite_list}}</h2> -->
 
 </body>
 </html>
