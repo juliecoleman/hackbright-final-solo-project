@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--     <script crossorigin src="https://unpkg.com/react@16/umd/
+                             react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/
+                             react-dom.development.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/
+                             libs/babel-standalone/6.26.0/babel.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  {% for msg in get_flashed_messages() %}
+    <ul class="flashes">
+      {{ msg }}
+    </ul>
+  {% endfor %}
+
+
+  {% block body %}
+  {% endblock %}
+
+</body>
+</html>

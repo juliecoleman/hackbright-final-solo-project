@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Homepage</title>
+{% extends 'base.html' %}
 
-</head>
-<body>
-  {% for msg in get_flashed_messages() %}
-    <ul class="flashes">
-      {{ msg }}
-    </ul>
-  {% endfor %}
+{% block body %}
   <h1>Welcome to Garden Knowledge!</h1>
 
   <br></br>
@@ -85,5 +76,4 @@
     </form>
   {% endif %}
 
-</body>
-</html>
+{% endblock %}

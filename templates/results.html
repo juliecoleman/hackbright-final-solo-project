@@ -17,6 +17,9 @@
 
 </head>
 <body>
+{% extends 'base.html' %}
+
+{% block body %}
   <h2>Here are your results!</h2>
 
 {#   <div id="app"></div> #}
@@ -77,5 +80,5 @@ class="add-favorite" #}
 {# {% block js %} #}
   {# <script src="/static/js/results.jsx" type="text/jsx"></script> #}
 {# {% endblock %} #}
-</body>
-</html>
+
+{% endblock %}

@@ -40,9 +40,7 @@ class FlaskTestsRoute(TestCase):
         result = self.client.get("/favorites")
         self.assertIn(b"Here are your favorites", result.data)
 
-#Note I did not write any tests to database other than what is already above
-#because I did not have any routes within server.py querying on the 2 databases.
-#Would need to run tests somehow through crud.py 
+
 
 class FlaskTestsCreatingFavorite(TestCase):
     """Testing adding a favorite to the favorite_crops table."""
@@ -60,7 +58,7 @@ class FlaskTestsCreatingFavorite(TestCase):
                 sess['gardener_id'] = 1
 
     def test_favorite_crops_table(self):
-        """Testing adding a favorite to the favorite_crops table."""
+        """Testing adding a favorite to the favorite_crops tablete."""
         with self.client as c:
             result = c.post("/create-favorite",
                             data={'crop_id': 4}

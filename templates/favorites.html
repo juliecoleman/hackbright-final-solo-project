@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Homepage</title>
+{% extends 'base.html' %}
 
-</head>
-<body>
+{% block body %}
   <h1>Here are your favorites!</h1>
 
   {% for crop in crop_favorite_list %}
@@ -21,5 +17,4 @@
 
 <!--   <h2>{{crop_favorite_list}}</h2> -->
 
-</body>
-</html>
+{% endblock %}
