@@ -64,6 +64,7 @@ class CropCondition(db.Model):
     planting_month = db.Column(db.String)
     shade_ok = db.Column(db.String)
     soil_type = db.Column(db.String)
+    soil_ph = db.Column(db.String)
     difficulty = db.Column(db.String)
 
     crop = db.relationship('Crop')

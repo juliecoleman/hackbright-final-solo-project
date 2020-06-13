@@ -59,10 +59,11 @@ for crop_condition in crop_condition_data:
     planting_month = crop_condition['planting month']
     shade_ok = crop_condition['shade ok']
     soil_type = crop_condition['soil type']
+    soil_ph = crop_condition['soil pH']
     difficulty = crop_condition['difficulty']
 
     db_crop_condition = crud.create_crop_conditions(crop_id,
-        crop_name, plant_hardiness_zone, planting_month, shade_ok, soil_type, difficulty)
+        crop_name, plant_hardiness_zone, planting_month, shade_ok, soil_type, soil_ph, difficulty)
 
     crop_conditions_in_db.append(db_crop_condition)
 

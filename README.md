@@ -1,7 +1,7 @@
 Installation
 1. createdb cropweather
 2. git clone the repo
-3. within the main folder, create a secret.sh file that has export_key="insert_key" where "insert_key" is a string of an API key from Meteostat
+3. within the main folder, create a secret.sh file that has export_key="insert_key" where "insert_key" is a string of an API key from Harvest Helper (https://harvesthelper.herokuapp.com/developers)
 4. within the main folder, create a virtual environment
 5. activate the virtual environment
 6. pip install the requirements

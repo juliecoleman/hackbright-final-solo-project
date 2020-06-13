@@ -99,6 +99,7 @@ def results():
     shade_ok = request.args.get('shade_ok')
     planting_month = request.args.get('planting_month')
     soil_type = request.args.get('soil_type')
+    soil_ph = request.args.get('soil_ph')
     difficulty = request.args.get('difficulty')
 
     res = requests.get(
@@ -110,7 +111,7 @@ def results():
 
     crop_list = crud.get_crop_recommendations(plant_hardiness_zone,  
                                               planting_month, shade_ok, 
-                                              soil_type, difficulty)
+                                              soil_type, soil_ph, difficulty)
 
     return render_template('results.html', 
         plant_hardiness_zone=plant_hardiness_zone, crop_list=crop_list)
