@@ -43,18 +43,41 @@
   <br></br>
   {% endif %}
 
+
   <section>
     <h2>Begin your search</h2>
     <form action="/results" id="query">
-      <label for="city">Please enter your city</label>
-      <input type="text" id="city-field" name="city">
+      <label for="zipcode">Please enter your zipcode</label>
+      <input type="text" id="zipcode-field" name="zipcode">
 
+      <br></br>
+
+      <label for="planting_month">What month will you be planting?</label>
+      <select name="planting_month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+      
+      <br></br>
+      
       <label for="shade_ok">Will your plants be in the shade?</label>
       <select name="shade_ok">
         <option value="yes">yes</option>
         <option value="no">no</option>
       </select>
-
+      
+      <br></br>
+      
       <label for="soil_type">Will you be planting in loamy or sandy soil?</label>
       <select name="soil_type">
         <option value="loamy">loamy</option>
@@ -62,7 +85,19 @@
         <option value="both">loamy and sandy</option>
         <option value="unknown">unknown</option>
       </select>
-
+      
+      <br></br>
+      
+      <label for="difficulty">What level of difficulty would you like?</label>
+      <select name="difficulty">
+        <option value="easy">easy</option>
+        <option value="average">average</option>
+        <option value="difficult">difficult</option>
+        <option value="any">any</option>
+      </select>
+      
+      <br></br>
+      
       <button type="submit">Search</button>
     </form>
   </section>

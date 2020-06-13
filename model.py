@@ -34,6 +34,7 @@ class Crop(db.Model):
     crop_planting_considerations = db.Column(db.String)
     crop_when_to_plant = db.Column(db.String)
     crop_growing_from_seed = db.Column(db.String)
+    crop_transplanting = db.Column(db.String)
     crop_spacing = db.Column(db.String)
     crop_watering = db.Column(db.String)
     crop_feeding = db.Column(db.String)
@@ -59,10 +60,11 @@ class CropCondition(db.Model):
     condition_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     crop_id = db.Column(db.Integer, db.ForeignKey('crops.crop_id'))
     crop_name = db.Column(db.String)
-    lowest_min_temp = db.Column(db.Integer)
-    highest_min_temp = db.Column(db.Integer)
-    shade_ok = db.Column(db.String, nullable=False, default="False")
+    plant_hardiness_zone = db.Column(db.Integer)
+    planting_month = db.Column(db.String)
+    shade_ok = db.Column(db.String)
     soil_type = db.Column(db.String)
+    difficulty = db.Column(db.String)
 
     crop = db.relationship('Crop')
     
