@@ -10,24 +10,24 @@
     <h2>Log in</h2>
     <form action = "/login" method="POST">
       <label for="username">username</label>
-      <input type = "text" id="username" name="username">
+      <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
 
       <label for="password">password</label>
-      <input type = "text" id="password" name="password">   
+      <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
 
-      <input type="submit">
+      <button type="submit" class="btn btn-success">Log In</button>
     </form>
 
     <h1>OR</h1>
     <h2>Create account if new here</h2>
     <form action = "/create-gardener" method="POST">
       <label for="username">username</label>
-      <input type = "text" id="username" name="username">
+      <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
 
       <label for="password">password</label>
-      <input type = "text" id="password" name="password">   
+      <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
 
-      <input type="submit">
+      <button type="submit" class="btn btn-success">Create Account</button>
     </form>
   </section>
   <br></br>
@@ -37,7 +37,7 @@
 
   {%if "gardener_id" in session %}
   <form action="/logout">
-    <button type="submit">Log out</button>
+    <button type="submit" class="btn btn-success">Log out</button>
   </form>
   <br></br>
   <br></br>
@@ -48,12 +48,12 @@
     <h2>Begin your search</h2>
     <form action="/results" id="query">
       <label for="zipcode">Please enter your zipcode</label>
-      <input type="text" id="zipcode-field" name="zipcode">
+      <input type="text" class="form-control form-control-sm col-2" id="zipcode-field" name="zipcode">
 
       <br></br>
 
       <label for="planting_month">What month will you be planting?</label>
-      <select name="planting_month">
+      <select name="planting_month" class="custom-select custom-select-sm col-2">
         <option value="January">January</option>
         <option value="February">February</option>
         <option value="March">March</option>
@@ -71,7 +71,7 @@
       <br></br>
       
       <label for="shade_ok">Will your plants be in the shade?</label>
-      <select name="shade_ok">
+      <select name="shade_ok" class="custom-select custom-select-sm col-2">
         <option value="yes">yes</option>
         <option value="no">no</option>
       </select>
@@ -79,7 +79,7 @@
       <br></br>
       
       <label for="soil_type">Will you be planting in loamy or sandy soil?</label>
-      <select name="soil_type">
+      <select name="soil_type" class="custom-select custom-select-sm col-2">
         <option value="loamy">loamy</option>
         <option value="sandy">sandy</option>
         <option value="both">loamy and sandy</option>
@@ -89,7 +89,7 @@
       <br></br>
       
       <label for="soil_ph">What is the pH of the soil you are planting?</label>
-      <select name="soil_ph">
+      <select name="soil_ph" class="custom-select custom-select-sm col-2">
         <option value="acidic">acidic (ph 4 to 5.5)</option>
         <option value="moderately acidic">moderately acidic (ph 5.5 to 6.5)</option>
         <option value="moderately alkaline">neutral to moderately alkaline (ph 6.5 to 7.5)</option>
@@ -99,7 +99,7 @@
       <br></br>
       
       <label for="difficulty">What level of difficulty would you like?</label>
-      <select name="difficulty">
+      <select name="difficulty" class="custom-select custom-select-sm col-2">
         <option value="easy">easy</option>
         <option value="average">average</option>
         <option value="difficult">difficult</option>
@@ -108,7 +108,7 @@
       
       <br></br>
       
-      <button type="submit">Search</button>
+      <button type="submit" class="btn btn-success btn-lg">Search</button>
     </form>
   </section>
   
@@ -117,8 +117,12 @@
     <br></br>
     <h2>Ready to see all your favorites?</h2>
     <form action="/favorites">
-      <button type="submit">Go to favorites</button>
+      <button type="submit" class="btn btn-success btn-lg">Go to favorites</button>
     </form>
   {% endif %}
+
+  <br></br>
+  <br></br>
+  <br></br>
 
 {% endblock %}

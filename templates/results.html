@@ -51,7 +51,7 @@
 
 {#    <form action="/create-favorite" method="POST" class="add-favorite">
       <input type="hidden" name="crop_id" value="{{crop['crop_id']}}" id="crop_id-field"/>
- #}   <button type="submit" onclick="addFavorite({{crop['crop_id']}})">Add to favorites</button>
+ #}   <button type="submit" class="btn btn-success active" aria-pressed="true" onclick="addFavorite({{crop['crop_id']}})">Add to favorites</button>
 {#    </form> #}
       
     </p>
@@ -60,7 +60,7 @@
 
   <h2>Ready to see all your favorites?</h2>
   <form action="/favorites">
-    <button type="submit">Go to favorites</button>
+    <button type="submit" class="btn btn-success btn-lg">Go to favorites</button>
   </form>
   {# class="add-favorite" #}
 
