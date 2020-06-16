@@ -33,3 +33,7 @@ function addFavorite (id) {
   });
   // return false; 
 }
+
+function createAccount () {
+    $('#create-account').show();
+};

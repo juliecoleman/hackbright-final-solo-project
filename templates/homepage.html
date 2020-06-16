@@ -1,48 +1,57 @@
 {% extends 'base.html' %}
 
 {% block body %}
-  <h1>Welcome to Garden Knowledge!</h1>
-
-  <br></br>
-
   {% if "gardener_id" not in session %}
-  <section>
-    <h2>Log in</h2>
-    <form action = "/login" method="POST">
-      <label for="username">username</label>
-      <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
+    <nav class="navbar navbar-light fixed-top bg-light">
 
-      <label for="password">password</label>
-      <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
+      <div id="log-in">
+        <h4>Log in</h4>
+        <form action = "/login" class="form-inline" method="POST">
+          <label for="username">username</label>
+          <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
 
-      <button type="submit" class="btn btn-success">Log In</button>
-    </form>
+          <label for="password">password</label>
+          <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
 
-    <h1>OR</h1>
-    <h2>Create account if new here</h2>
-    <form action = "/create-gardener" method="POST">
-      <label for="username">username</label>
-      <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
+          <button type="submit" class="btn btn-success">Log In</button>
+        </form>
+      </div>
 
-      <label for="password">password</label>
-      <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
+      <div id="new-here">
+        <h4>Or if new</h4>
+        <button type="submit" class="btn btn-success" onClick="createAccount()">Create Account</button>
+      </div>
+    
 
-      <button type="submit" class="btn btn-success">Create Account</button>
-    </form>
-  </section>
-  <br></br>
-  <br></br>
+      <div id="create-account">
+        <h4>Create account</h4>
+        <form action = "/create-gardener" class="form-inline" method="POST">
+          <label for="username">username</label>
+          <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
+
+          <label for="password">password</label>
+          <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
+
+          <button type="submit" class="btn btn-success" onClick="showLogIn()">Create Account</button>
+        </form>
+      </div>
+    </nav>
   {% endif %}
   
 
   {%if "gardener_id" in session %}
-  <form action="/logout">
-    <button type="submit" class="btn btn-success">Log out</button>
-  </form>
-  <br></br>
-  <br></br>
+    <nav class="navbar navbar-light fixed-top bg-light">
+      <form action="/logout">
+        <button type="submit" class="btn btn-success">Log out</button>
+      </form>
+    </nav>
   {% endif %}
 
+  <br></br>
+  <br></br>
+  <br></br>
+
+  <h1 class="text-center">Welcome to Garden Knowledge!</h1>
 
   <section>
     <h2>Begin your search</h2>
@@ -124,5 +133,7 @@
   <br></br>
   <br></br>
   <br></br>
+
+  <script src="/static/js/homepage.js"></script>
 
 {% endblock %}
