@@ -1,32 +1,44 @@
 {% extends 'base.html' %}
 
 {% block body %}
+
+
+  <br></br>
+  <br></br>
+  <br></br>
+
   <h1>Here are your favorites!</h1>
 
+  <br></br>
+
+  <!--   <h2>{{crop_favorite_list}}</h2> -->
+
   {% for crop in crop_favorite_list %}
-    <p>
-      Name: {{crop['name']}}
-      <br></br>
-      {{crop['image_url']}}
-      <br></br>
-      Planting considerations: {{crop['planting_consideration']}}
-      <br></br>
-      How to grow from seed: {{crop['growing_from_seed']}}
-      <br></br>
-      How to transplant: {{crop['transplanting']}}
-      <br></br>
-      Spacing: {{crop['spacing']}}
-      <br></br>
-      Watering: {{crop['watering']}}
-      <br></br>
-      Feeding: {{crop['feeding']}}
-      <br></br>
-      Crop ID: {{crop['crop_id']}}
-      
-    </p>
+    <div class="card" style="width: 80rem;">
+      <img src="/static/img/Garden_Knowledge.png" style="width: 10rem;">
+
+      <div class="card-body">
+        <h3>Name: {{crop['name']}}</h3>
+      </div>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">How to grow from seed: {{crop['growing_from_seed']}}</li>
+        <li class="list-group-item">How to transplant: {{crop['transplanting']}}</li>
+        <li class="list-group-item">Spacing: {{crop['spacing']}}</li>
+        <li class="list-group-item">Watering: {{crop['watering']}}</li>
+        <li class="list-group-item">Feeding: {{crop['feeding']}}</li>
+        <li class="list-group-item">Crop ID: {{crop['crop_id']}}</li>
+      </ul>
+    </div>
     <br></br>
   {% endfor%}
 
-<!--   <h2>{{crop_favorite_list}}</h2> -->
+
+  <h2>Return to homepage</h2>
+  <form action="/">
+    <button type="submit" class="btn btn-warning btn-lg">Homepage</button>
+  </form>
+
+  <br></br>
 
 {% endblock %}

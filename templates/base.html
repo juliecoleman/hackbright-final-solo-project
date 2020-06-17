@@ -35,6 +35,54 @@
     </ul>
   {% endfor %}
 
+  {% if "gardener_id" not in session %}
+    <nav class="navbar navbar-light fixed-top" style="background-color: white">
+
+      <img src="/static/img/Garden_Knowledge.png" style="width: 5rem;">
+
+      <div id="log-in">
+        <h4>Log in</h4>
+        <form action = "/login" class="form-inline" method="POST">
+          <label for="username">username</label>
+          <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
+
+          <label for="password">password</label>
+          <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
+
+          <button type="submit" class="btn btn-warning">Log In</button>
+        </form>
+      </div>
+
+      <div id="new-here">
+        <h4>Or if new</h4>
+        <button type="submit" class="btn btn-warning" onClick="createAccount()">Create Account</button>
+      </div>
+    
+
+      <div id="create-account">
+        <h4>Create account</h4>
+        <form action = "/create-gardener" class="form-inline" method="POST">
+          <label for="username">username</label>
+          <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
+
+          <label for="password">password</label>
+          <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
+
+          <button type="submit" class="btn btn-warning" onClick="showLogIn()">Create Account</button>
+        </form>
+      </div>
+    </nav>
+  {% endif %}
+
+  {%if "gardener_id" in session %}
+    <nav class="navbar navbar-light fixed-top" style="background-color: white">
+      <img src="/static/img/Garden_Knowledge.png" style="width: 5rem;">
+      <form action="/logout">
+        <button type="submit" class="btn btn-warning">Log out</button>
+      </form>
+    </nav>
+  {% endif %}
+
 
   {% block body %}
   {% endblock %}

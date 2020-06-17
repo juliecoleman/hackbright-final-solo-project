@@ -1,134 +1,116 @@
 {% extends 'base.html' %}
 
 {% block body %}
-  {% if "gardener_id" not in session %}
-    <nav class="navbar navbar-light fixed-top bg-light">
 
-      <div id="log-in">
-        <h4>Log in</h4>
-        <form action = "/login" class="form-inline" method="POST">
-          <label for="username">username</label>
-          <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
+  <br></br>
+  <br></br>
+  <br></br>
 
-          <label for="password">password</label>
-          <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
-
-          <button type="submit" class="btn btn-success">Log In</button>
-        </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-3 text-center">
+        <h1>Welcome to Garden Knowledge!</h1>
+        <br></br>
+        <img src="/static/img/Garden_Knowledge.png">
       </div>
 
-      <div id="new-here">
-        <h4>Or if new</h4>
-        <button type="submit" class="btn btn-success" onClick="createAccount()">Create Account</button>
+      <div class="col-6 text-center">
+        <p>
+          We know that gardening can be a lot of trial and error to know what works.
+          We are here to help! Fill in your gardening information to receive 
+          personalized suggestions for your garden.
+        </p>
+
+        <br></br>
+        <section>
+          <h2>Your gardening information</h2>
+          <form action="/results" id="query">
+
+            <div class="form-group row justify-content-center align-items-center">
+              <label for="zipcode">Please enter your zipcode</label>
+              <input type="text" class="form-control form-control-sm col-4" id="zipcode-field" name="zipcode">
+            </div>
+
+
+            <label for="planting_month">What month will you be planting?</label>
+            <select name="planting_month" class="custom-select custom-select-sm col-4">
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+            
+            <br></br>
+            
+            <label for="shade_ok">Will your plants be in the shade?</label>
+            <select name="shade_ok" class="custom-select custom-select-sm col-4">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+            
+            <br></br>
+            
+            <label for="soil_type">Will you be planting in loamy or sandy soil?</label>
+            <select name="soil_type" class="custom-select custom-select-sm col-4">
+              <option value="loamy">loamy</option>
+              <option value="sandy">sandy</option>
+              <option value="both">loamy and sandy</option>
+              <option value="unknown">unknown</option>
+            </select>
+
+            <br></br>
+            
+            <label for="soil_ph">What is the pH of the soil you are planting?</label>
+            <select name="soil_ph" class="custom-select custom-select-sm col-4">
+              <option value="acidic">acidic (ph 4 to 5.5)</option>
+              <option value="moderately acidic">moderately acidic (ph 5.5 to 6.5)</option>
+              <option value="moderately alkaline">neutral to moderately alkaline (ph 6.5 to 7.5)</option>
+              <option value="unknown">unknown</option>
+            </select>
+            
+            <br></br>
+            
+            <label for="difficulty">What level of difficulty would you like?</label>
+            <select name="difficulty" class="custom-select custom-select-sm col-4">
+              <option value="easy">easy</option>
+              <option value="average">average</option>
+              <option value="difficult">difficult</option>
+              <option value="any">any</option>
+            </select>
+            
+            <br></br>
+            
+            <button type="submit" class="btn btn-warning btn-lg">Search</button>
+          </form>
+        </section>
       </div>
-    
 
-      <div id="create-account">
-        <h4>Create account</h4>
-        <form action = "/create-gardener" class="form-inline" method="POST">
-          <label for="username">username</label>
-          <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
-
-          <label for="password">password</label>
-          <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
-
-          <button type="submit" class="btn btn-success" onClick="showLogIn()">Create Account</button>
-        </form>
+      <div class="col-3">
+          {%if "gardener_id" in session %}
+            <br></br>
+            <br></br>
+            <div class="text-center">
+              <h2>Or see past favorites</h2>
+              <form action="/favorites">
+                <button type="submit" class="btn btn-warning btn-lg">Go to favorites</button>
+              </form>
+            </div>
+          {% endif %}
       </div>
-    </nav>
-  {% endif %}
+    </div>
+  </div>
+
+  
   
 
-  {%if "gardener_id" in session %}
-    <nav class="navbar navbar-light fixed-top bg-light">
-      <form action="/logout">
-        <button type="submit" class="btn btn-success">Log out</button>
-      </form>
-    </nav>
-  {% endif %}
-
-  <br></br>
-  <br></br>
-  <br></br>
-
-  <h1 class="text-center">Welcome to Garden Knowledge!</h1>
-
-  <section>
-    <h2>Begin your search</h2>
-    <form action="/results" id="query">
-      <label for="zipcode">Please enter your zipcode</label>
-      <input type="text" class="form-control form-control-sm col-2" id="zipcode-field" name="zipcode">
-
-      <br></br>
-
-      <label for="planting_month">What month will you be planting?</label>
-      <select name="planting_month" class="custom-select custom-select-sm col-2">
-        <option value="January">January</option>
-        <option value="February">February</option>
-        <option value="March">March</option>
-        <option value="April">April</option>
-        <option value="May">May</option>
-        <option value="June">June</option>
-        <option value="July">July</option>
-        <option value="August">August</option>
-        <option value="September">September</option>
-        <option value="October">October</option>
-        <option value="November">November</option>
-        <option value="December">December</option>
-      </select>
-      
-      <br></br>
-      
-      <label for="shade_ok">Will your plants be in the shade?</label>
-      <select name="shade_ok" class="custom-select custom-select-sm col-2">
-        <option value="yes">yes</option>
-        <option value="no">no</option>
-      </select>
-      
-      <br></br>
-      
-      <label for="soil_type">Will you be planting in loamy or sandy soil?</label>
-      <select name="soil_type" class="custom-select custom-select-sm col-2">
-        <option value="loamy">loamy</option>
-        <option value="sandy">sandy</option>
-        <option value="both">loamy and sandy</option>
-        <option value="unknown">unknown</option>
-      </select>
-
-      <br></br>
-      
-      <label for="soil_ph">What is the pH of the soil you are planting?</label>
-      <select name="soil_ph" class="custom-select custom-select-sm col-2">
-        <option value="acidic">acidic (ph 4 to 5.5)</option>
-        <option value="moderately acidic">moderately acidic (ph 5.5 to 6.5)</option>
-        <option value="moderately alkaline">neutral to moderately alkaline (ph 6.5 to 7.5)</option>
-        <option value="unknown">unknown</option>
-      </select>
-      
-      <br></br>
-      
-      <label for="difficulty">What level of difficulty would you like?</label>
-      <select name="difficulty" class="custom-select custom-select-sm col-2">
-        <option value="easy">easy</option>
-        <option value="average">average</option>
-        <option value="difficult">difficult</option>
-        <option value="any">any</option>
-      </select>
-      
-      <br></br>
-      
-      <button type="submit" class="btn btn-success btn-lg">Search</button>
-    </form>
-  </section>
-  
-  {%if "gardener_id" in session %}
-    <br></br>
-    <br></br>
-    <h2>Ready to see all your favorites?</h2>
-    <form action="/favorites">
-      <button type="submit" class="btn btn-success btn-lg">Go to favorites</button>
-    </form>
-  {% endif %}
 
   <br></br>
   <br></br>
