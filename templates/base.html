@@ -29,12 +29,6 @@
 </head>
 <body>
 
-  {% for msg in get_flashed_messages() %}
-    <ul class="flashes">
-      {{ msg }}
-    </ul>
-  {% endfor %}
-
   {% if "gardener_id" not in session %}
     <nav class="navbar navbar-light fixed-top" style="background-color: white">
 
@@ -49,13 +43,13 @@
           <label for="password">password</label>
           <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
 
-          <button type="submit" class="btn btn-warning">Log In</button>
+          <button type="submit" class="btn btn-info">Log In</button>
         </form>
       </div>
 
       <div id="new-here">
         <h4>Or if new</h4>
-        <button type="submit" class="btn btn-warning" onClick="createAccount()">Create Account</button>
+        <button type="submit" class="btn btn-info" onClick="createAccount()">Create Account</button>
       </div>
     
 
@@ -68,7 +62,7 @@
           <label for="password">password</label>
           <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
 
-          <button type="submit" class="btn btn-warning" onClick="showLogIn()">Create Account</button>
+          <button type="submit" class="btn btn-info" onClick="showLogIn()">Create Account</button>
         </form>
       </div>
     </nav>
@@ -78,10 +72,25 @@
     <nav class="navbar navbar-light fixed-top" style="background-color: white">
       <img src="/static/img/Garden_Knowledge.png" style="width: 5rem;">
       <form action="/logout">
-        <button type="submit" class="btn btn-warning">Log out</button>
+        <button type="submit" class="btn btn-info">Log out</button>
       </form>
     </nav>
   {% endif %}
+
+  <div class="container">
+
+  {% for msg in get_flashed_messages() %}
+
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        {{ msg }}
+    </div>
+
+  {% endfor %}
+
+  </div>
 
 
   {% block body %}

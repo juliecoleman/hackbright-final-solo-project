@@ -2,10 +2,6 @@
 
 {% block body %}
 
-  <br></br>
-  <br></br>
-  <br></br>
-
   <div class="container border bg-light rounded-pill">
     <div class="row">
       <div class="col-3 text-center">
@@ -49,6 +45,7 @@
               <option value="October">October</option>
               <option value="November">November</option>
               <option value="December">December</option>
+              <option value="unknown">unknown</option>
             </select>
             
             <br></br>
@@ -57,6 +54,7 @@
             <select name="shade_ok" class="custom-select custom-select-sm col-4">
               <option value="yes">yes</option>
               <option value="no">no</option>
+              <option value="unknown">unknown</option>
             </select>
             
             <br></br>
@@ -86,12 +84,12 @@
               <option value="easy">easy</option>
               <option value="average">average</option>
               <option value="difficult">difficult</option>
-              <option value="any">any</option>
+              <option value="any">unknown</option>
             </select>
             
             <br></br>
             
-            <button type="submit" class="btn btn-warning btn-lg">Search</button>
+            <button type="submit" class="btn btn-info btn-lg">Search</button>
           </form>
         </section>
         <br></br>
@@ -107,7 +105,7 @@
             <div class="text-center">
               <h2>Or see past favorites</h2>
               <form action="/favorites">
-                <button type="submit" class="btn btn-warning btn-lg">Favorites</button>
+                <button type="submit" class="btn btn-info btn-lg">Favorites</button>
               </form>
             </div>
           {% endif %}

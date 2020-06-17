@@ -1,6 +1,7 @@
 body {
   background-image: url('/static/img/background-6.jpg');
   font-family: cursive;
+  padding-top: 150px; 
 }
 
 #create-account {

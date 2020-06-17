@@ -46,11 +46,16 @@ def login_gardener():
 
     gardener = crud.get_gardener_by_username(username)
 
-    if password_to_check == gardener.password:
-       session['gardener_id'] = gardener.gardener_id
-       flash('You are logged in and ready to save your searches and favorites!')
+    if gardener != None:
+
+        if password_to_check == gardener.password:
+           session['gardener_id'] = gardener.gardener_id
+           flash('You are logged in and ready to save your searches and favorites!')
+        else:
+           flash('Error. Incorrect password.')
+
     else:
-       flash('Error. Incorrect password or username.')
+        flash('Error. Username does not exist.')
 
     return redirect('/')
 
@@ -102,12 +107,17 @@ def results():
     soil_ph = request.args.get('soil_ph')
     difficulty = request.args.get('difficulty')
 
-    res = requests.get(
-        f'https://phzmapi.org/{zipcode}.json')
+    if zipcode != "":
 
-    zipcode_data = res.json()
+        res = requests.get(
+            f'https://phzmapi.org/{zipcode}.json')
 
-    plant_hardiness_zone = zipcode_data['zone'][0]
+        zipcode_data = res.json()
+
+        plant_hardiness_zone = zipcode_data['zone'][0]
+
+    else:
+        plant_hardiness_zone = 'unknown'
 
     crop_list = crud.get_crop_recommendations(plant_hardiness_zone,  
                                               planting_month, shade_ok, 

@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Homepage</title>
-
-{#   <script crossorigin src="https://unpkg.com/react@16/umd/
-  react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/
-  react-dom.development.js"></script>
-  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/
-  libs/babel-standalone/6.26.0/babel.js"></script> #}
-
-  <script src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
-  crossorigin="anonymous"></script>
-
-
-</head>
-<body>
 {% extends 'base.html' %}
 
 {% block body %}
-
-  <br></br>
-  <br></br>
-  <br></br>
-
-  <h1 class="text-warning">Here are your results!</h1>
-  <br></br>
 
 {#   <div id="app"></div> #}
 
@@ -34,7 +8,16 @@
 
   <h5>{{crop_list}}</h5> #}
 
+  {% if not crop_list %}
+    <h1 class="text-warning">Sorry, there were no results matching your search</h1>
+    <br></br>
+  {% else %}
+    <h1 class="text-warning">Here are your results!</h1>
+    <br></br>
+  {% endif %}
+
   {% for crop in crop_list %}
+
   
     <div class="card" style="width: 80rem;">
       <img src="/static/img/Garden_Knowledge.png" style="width: 10rem;">
@@ -56,7 +39,7 @@
       <input type="hidden" name="crop_id" value="{{crop['crop_id']}}" id="crop_id-field"/>
  #}   
       <div class="card-body">
-        <button type="submit" class="btn btn-warning" aria-pressed="true" onclick="addFavorite({{crop['crop_id']}})">Add to favorites</button>
+        <button type="submit" class="btn btn-info" aria-pressed="true" onclick="addFavorite({{crop['crop_id']}})">Add to favorites</button>
       </div>
 
     </div>
@@ -67,7 +50,7 @@
 
   <h2 class="text-warning">Ready to see all your favorites?</h2>
   <form action="/favorites">
-    <button type="submit" class="btn btn-warning btn-lg">Favorites</button>
+    <button type="submit" class="btn btn-info btn-lg">Favorites</button>
   </form>
   {# class="add-favorite" #}
 
