@@ -25,7 +25,8 @@
   <br></br>
   <br></br>
 
-  <h2>Here are your results!</h2>
+  <h1 class="text-warning">Here are your results!</h1>
+  <br></br>
 
 {#   <div id="app"></div> #}
 
@@ -64,17 +65,13 @@
     <br></br>
   {% endfor%}
 
-  <h2>Ready to see all your favorites?</h2>
+  <h2 class="text-warning">Ready to see all your favorites?</h2>
   <form action="/favorites">
-    <button type="submit" class="btn btn-warning btn-lg">Go to favorites</button>
+    <button type="submit" class="btn btn-warning btn-lg">Favorites</button>
   </form>
   {# class="add-favorite" #}
 
   <br></br>
-
-  <h2>Want to learn more about the climate for where you live</h2>
-  <iframe src="https://www.plantmaps.com/hardiness-zone-zipcode.php" name="Find the USDA Hardiness Zone for your Zipocde and Map it" width="210" scrolling="No" frameborder="0" marginheight="0" marginwidth="0">[Your browser doesn't support IFrames. <a href="//www.plantmaps.com/hardiness-zone-zipcode.php" target="_blank">Click here</a> to find the USDA hardiness zone for your zipcode.]</iframe>
-
 
   <script src="/static/js/results.js"></script>
 {# {% block js %} #}

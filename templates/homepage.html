@@ -6,15 +6,18 @@
   <br></br>
   <br></br>
 
-  <div class="container">
+  <div class="container border bg-light rounded-pill">
     <div class="row">
       <div class="col-3 text-center">
-        <h1>Welcome to Garden Knowledge!</h1>
         <br></br>
-        <img src="/static/img/Garden_Knowledge.png">
+        <br></br>
+        <br></br>
+        <br></br>
+        <img src="/static/img/Garden_Knowledge.png" style="width: 14rem;">
       </div>
 
       <div class="col-6 text-center">
+        <br></br>
         <p>
           We know that gardening can be a lot of trial and error to know what works.
           We are here to help! Fill in your gardening information to receive 
@@ -91,16 +94,20 @@
             <button type="submit" class="btn btn-warning btn-lg">Search</button>
           </form>
         </section>
+        <br></br>
       </div>
 
       <div class="col-3">
           {%if "gardener_id" in session %}
             <br></br>
             <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             <div class="text-center">
               <h2>Or see past favorites</h2>
               <form action="/favorites">
-                <button type="submit" class="btn btn-warning btn-lg">Go to favorites</button>
+                <button type="submit" class="btn btn-warning btn-lg">Favorites</button>
               </form>
             </div>
           {% endif %}
