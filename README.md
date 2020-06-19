@@ -12,4 +12,4 @@ Installation
 
 
 Tech Stack
-Python, JavaScript, SQLAlchemy, PostgreSQL, Flask, JQuery, AJAX
+Python, JavaScript, SQLAlchemy, PostgreSQL, Flask, JQuery, AJAX, Bootstrap

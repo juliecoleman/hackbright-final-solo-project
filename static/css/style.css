@@ -15,7 +15,7 @@ body {
 
 .tooltip-inner {
   background-color: #00acd6;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .tooltip .arrow:before {

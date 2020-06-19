@@ -9,11 +9,27 @@
   <h5>{{crop_list}}</h5> #}
 
   {% if not crop_list %}
+
     <h1 class="text-warning">Sorry, there were no results matching your search</h1>
     <br></br>
+
   {% else %}
+
     <h1 class="text-warning">Here are your results!</h1>
     <br></br>
+
+
+    <h3 class="text-warning">From your zipcode, your plant hardiness zone is {{plant_hardiness_zone}}.
+      <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+      data-toggle="tooltip" data-placement="right" title="Here is an image of the plant hardiness zones in the US for reference. <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
+      <br></br>These results are based on your inputs: 
+      <br></br>-Planting in {{crop_list[0]['planting_month']}}
+      <br></br>-Shade: {{crop_list[0]['shade_ok']}}
+      <br></br>-Soil type: {{crop_list[0]['soil_type']}}
+      <br></br>-Soil pH: {{crop_list[0]['soil_ph']}}
+      <br></br>-Difficulty level: {{crop_list[0]['difficulty']}}
+
+
   {% endif %}
 
   {% for crop in crop_list %}
