@@ -7,3 +7,17 @@ body {
 #create-account {
   display: none;
 }
+
+.tooltip {
+  font-family: cursive;
+  font-size: 16px;
+}
+
+.tooltip-inner {
+  background-color: #00acd6;
+  max-width: 400px;
+}
+
+.tooltip .arrow:before {
+    border-right-color: #00acd6;
+}

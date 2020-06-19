@@ -27,12 +27,21 @@
 
             <div class="form-group row justify-content-center align-items-center">
               <label for="zipcode">Please enter your zipcode</label>
-              <input type="text" class="form-control form-control-sm col-4" id="zipcode-field" name="zipcode">
+              <input type="text" class="form-control form-control-sm col-4" 
+              id="zipcode-field" name="zipcode">
+              <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+              data-toggle="tooltip" data-placement="right" title="Providing your 
+              zipcode is highly suggested as it is used to determine your USDA 
+              plant hardiness zone. The USDA plant hardiness zone is based on 
+              annual minimum winter temperatures and can help determine which 
+              garden vegetables will do best in your location and month of 
+              sowing.">
             </div>
 
 
             <label for="planting_month">What month will you be planting?</label>
-            <select name="planting_month" class="custom-select custom-select-sm col-4">
+            <select name="planting_month" class="custom-select custom-select-sm 
+            col-4">
               <option value="January">January</option>
               <option value="February">February</option>
               <option value="March">March</option>
@@ -47,6 +56,11 @@
               <option value="December">December</option>
               <option value="unknown">unknown</option>
             </select>
+            <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+            data-toggle="tooltip" data-placement="right" title="Providing your 
+            planting month is highly suggested as seasonal climate changes, 
+            such as a transition from warm to cool versus cool to warm weather, 
+            often affect which garden vegetables will do best.">
             
             <br></br>
             
@@ -56,26 +70,49 @@
               <option value="no">no</option>
               <option value="unknown">unknown</option>
             </select>
+            <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+            data-toggle="tooltip" data-placement="right" title="Some 
+            garden vegetables thrive in direct sun and others thrive in shade. 
+            Providing information on whether your plants will be in shade or 
+            sun will help narrow down suggestions.">
             
             <br></br>
             
-            <label for="soil_type">Will you be planting in loamy or sandy soil?</label>
+            <label for="soil_type">Is the soil loamy or sandy?</label>
             <select name="soil_type" class="custom-select custom-select-sm col-4">
               <option value="loamy">loamy</option>
               <option value="sandy">sandy</option>
               <option value="both">loamy and sandy</option>
               <option value="unknown">unknown</option>
             </select>
+            <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+            data-toggle="tooltip" data-placement="right" title="There are three
+            basic types of soils: sandy, clay, and silt. Most garden 
+            vegetables prefer a loamy and sandy soil versus clay or silt soils.
+            If your soil type is clay or silt, it is highly suggested
+            to add organic matter such as compost or peat moss to make your soil
+            type be loamy. If your soil type is sandy, you can choose to leave it
+            so and get gardenings suggestions accordingly, or you can add 
+            organic matter to make your soil type be sandy and loamy to 
+            support other vegetable types.">
 
             <br></br>
             
-            <label for="soil_ph">What is the pH of the soil you are planting?</label>
+            <label for="soil_ph">What is the pH of the soil?</label>
             <select name="soil_ph" class="custom-select custom-select-sm col-4">
               <option value="acidic">acidic (ph 4 to 5.5)</option>
               <option value="moderately acidic">moderately acidic (ph 5.5 to 6.5)</option>
               <option value="moderately alkaline">neutral to moderately alkaline (ph 6.5 to 7.5)</option>
               <option value="unknown">unknown</option>
             </select>
+            <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+            data-toggle="tooltip" data-placement="right" title="Different garden
+            vegetables thrive in different soil pHs. Soil pH often affects what 
+            nutrients are available to a plant. Different plants have different 
+            nutrient requirements. Therefore, it is suggested to test your soil 
+            pH to determine what will grow best in your soil. Soil pH can be readily
+            increased with the addition of lime but is more difficult to decrease
+            with the addition of sulfur.">
             
             <br></br>
             
@@ -86,6 +123,11 @@
               <option value="difficult">difficult</option>
               <option value="any">unknown</option>
             </select>
+            <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+            data-toggle="tooltip" data-placement="right" title="Some garden 
+            vegetables are more susceptible than others and require more care 
+            and maintenance such as additional fertilization or protection 
+            against pests and diseases.">
             
             <br></br>
             
@@ -121,6 +163,6 @@
   <br></br>
   <br></br>
 
-  <script src="/static/js/homepage.js"></script>
+  
 
 {% endblock %}
