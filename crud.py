@@ -692,15 +692,15 @@ def get_crop_conditions_shade_difficulty():
 
         condition_list.append(condition_dictionary)
 
-    condition_refined_dictionary = {}
+    shade_difficulty_dictionary = {}
 
     for condition in condition_list:
 
-        if condition['crop_id'] not in condition_refined_dictionary:
+        if condition['crop_id'] not in shade_difficulty_dictionary:
 
-            condition_refined_dictionary[condition['crop_id']] = {'shade_ok': condition['shade_ok'], 'difficulty': condition['difficulty']}      
+            shade_difficulty_dictionary[condition['crop_id']] = {'shade_ok': condition['shade_ok'], 'difficulty': condition['difficulty']}      
 
-    return condition_refined_dictionary
+    return shade_difficulty_dictionary
 
 
 def get_crop_conditions_zone_month():
@@ -719,27 +719,27 @@ def get_crop_conditions_zone_month():
 
         condition_list.append(condition_dictionary)
 
-    condition_refined_dictionary_2 = {}
+    zone_month_dictionary = {}
 
     for condition in condition_list:
 
-        if condition['crop_id'] in condition_refined_dictionary_2:
+        if condition['crop_id'] in zone_month_dictionary:
 
-            if condition['plant_hardiness_zone'] not in condition_refined_dictionary_2[condition['crop_id']]:
+            if condition['plant_hardiness_zone'] not in zone_month_dictionary[condition['crop_id']]:
 
-                condition_refined_dictionary_2[condition['crop_id']][condition['plant_hardiness_zone']] = [condition['planting_month']]
+                zone_month_dictionary[condition['crop_id']][condition['plant_hardiness_zone']] = [condition['planting_month']]
             else:
 
-                if condition['planting_month'] not in condition_refined_dictionary_2[condition['crop_id']][condition['plant_hardiness_zone']]:
+                if condition['planting_month'] not in zone_month_dictionary[condition['crop_id']][condition['plant_hardiness_zone']]:
 
-                    condition_refined_dictionary_2[condition['crop_id']][condition['plant_hardiness_zone']].append(condition['planting_month'])
+                    zone_month_dictionary[condition['crop_id']][condition['plant_hardiness_zone']].append(condition['planting_month'])
 
         else:
 
-            condition_refined_dictionary_2[condition['crop_id']] = {condition['plant_hardiness_zone']: [condition['planting_month']]}
+            zone_month_dictionary[condition['crop_id']] = {condition['plant_hardiness_zone']: [condition['planting_month']]}
 
 
-    return condition_refined_dictionary_2
+    return zone_month_dictionary
 
 def get_crop_conditions_soil():
     """Get crop conditions for soil type and soil pH."""
@@ -756,26 +756,26 @@ def get_crop_conditions_soil():
 
         condition_list.append(condition_dictionary)
 
-    condition_refined_dictionary_3 = {}
+    soil_dictionary = {}
 
     for condition in condition_list:
 
-        if condition['crop_id'] in condition_refined_dictionary_3:
+        if condition['crop_id'] in soil_dictionary:
 
-            if condition['soil_type'] not in condition_refined_dictionary_3[condition['crop_id']]['soil_type']:
+            if condition['soil_type'] not in soil_dictionary[condition['crop_id']]['soil_type']:
 
-                condition_refined_dictionary_3[condition['crop_id']]['soil_type'].append(condition['soil_type'])
+                soil_dictionary[condition['crop_id']]['soil_type'].append(condition['soil_type'])
 
-            elif condition['soil_ph'] not in condition_refined_dictionary_3[condition['crop_id']]['soil_ph']:
+            elif condition['soil_ph'] not in soil_dictionary[condition['crop_id']]['soil_ph']:
 
-                condition_refined_dictionary_3[condition['crop_id']]['soil_ph'].append(condition['soil_ph'])
+                soil_dictionary[condition['crop_id']]['soil_ph'].append(condition['soil_ph'])
 
         else:
 
-            condition_refined_dictionary_3[condition['crop_id']] = {'soil_type': [condition['soil_type']], 'soil_ph': [condition['soil_ph']]}
+            soil_dictionary[condition['crop_id']] = {'soil_type': [condition['soil_type']], 'soil_ph': [condition['soil_ph']]}
 
 
-    return condition_refined_dictionary_3
+    return soil_dictionary
 
 
 

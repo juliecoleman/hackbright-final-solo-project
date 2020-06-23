@@ -94,13 +94,17 @@ def favorites():
 
     crop_favorite_list = crud.get_crop_favorites(gardener_id)
 
-    condition_refined_dictionary = crud.get_crop_conditions_shade_difficulty()
+    shade_difficulty_dictionary = crud.get_crop_conditions_shade_difficulty()
 
-    condition_refined_dictionary_2 = crud.get_crop_conditions_zone_month()
+    zone_month_dictionary = crud.get_crop_conditions_zone_month()
 
-    condition_refined_dictionary_3 = crud.get_crop_conditions_soil()
+    soil_dictionary = crud.get_crop_conditions_soil()
 
-    return render_template('favorites.html', crop_favorite_list=crop_favorite_list, condition_refined_dictionary=condition_refined_dictionary, condition_refined_dictionary_2=condition_refined_dictionary_2, condition_refined_dictionary_3=condition_refined_dictionary_3)
+    return render_template('favorites.html', 
+        crop_favorite_list=crop_favorite_list, 
+        shade_difficulty_dictionary=shade_difficulty_dictionary, 
+        zone_month_dictionary=zone_month_dictionary, 
+        soil_dictionary=soil_dictionary)
 
 @app.route('/results')
 def results():
@@ -129,13 +133,18 @@ def results():
                                               planting_month, shade_ok, 
                                               soil_type, soil_ph, difficulty)
 
-    return render_template('results.html', 
-        plant_hardiness_zone=plant_hardiness_zone, crop_list=crop_list)
+    shade_difficulty_dictionary = crud.get_crop_conditions_shade_difficulty()
 
-    #Note this works for Amarillo but not San Jose. Need to filter city list
-    #results to only be for US and/or have file still work if no values
-    #received back from user search. So far if no values received back,
-    #then min_temp and max_temp variables are breaking
+    zone_month_dictionary = crud.get_crop_conditions_zone_month()
+
+    soil_dictionary = crud.get_crop_conditions_soil()
+
+    return render_template('results.html', 
+        plant_hardiness_zone=plant_hardiness_zone, crop_list=crop_list,
+        shade_difficulty_dictionary=shade_difficulty_dictionary, 
+        zone_month_dictionary=zone_month_dictionary, 
+        soil_dictionary=soil_dictionary)
+
 
 if __name__ == '__main__':
     connect_to_db(app)
