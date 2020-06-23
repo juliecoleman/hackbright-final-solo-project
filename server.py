@@ -94,7 +94,11 @@ def favorites():
 
     crop_favorite_list = crud.get_crop_favorites(gardener_id)
 
-    return render_template('favorites.html', crop_favorite_list=crop_favorite_list)
+    condition_refined_dictionary = crud.get_crop_conditions_shade_soil_difficulty()
+
+    condition_refined_dictionary_2 = crud.get_crop_conditions_zone_month()
+
+    return render_template('favorites.html', crop_favorite_list=crop_favorite_list, condition_refined_dictionary=condition_refined_dictionary, condition_refined_dictionary_2=condition_refined_dictionary_2)
 
 @app.route('/results')
 def results():

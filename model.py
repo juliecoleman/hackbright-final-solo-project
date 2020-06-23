@@ -68,6 +68,7 @@ class CropCondition(db.Model):
     difficulty = db.Column(db.String)
 
     crop = db.relationship('Crop')
+    # favorite_crop = db.relationship('FavoriteCrop')
     
 
     def __repr__(self):
@@ -81,9 +82,11 @@ class FavoriteCrop(db.Model):
     favorite_id = db.Column(db.Integer, primary_key=True)
     gardener_id = db.Column(db.Integer, db.ForeignKey('gardeners.gardener_id'), nullable=False)
     crop_id = db.Column(db.Integer, db.ForeignKey('crops.crop_id'), nullable=False)
+    # condition_id = db.Column(db.Integer, db.ForeignKey('crop_conditions.condition_id'))
 
     gardener = db.relationship('Gardener')
     crop = db.relationship('Crop')
+    # condition = db.relationship('CropCondition')
 
     def __repr__(self):
         return f'<FavoriteCrop gardener_id={self.gardener_id} crop_id={self.crop_id}>'

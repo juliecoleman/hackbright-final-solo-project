@@ -2,7 +2,7 @@
         {
             "id": "1",
             "crop name": "tomatoes",
-            "zone": "4",
+            "zone": "3",
             "planting month": "March",
             "shade ok": "no",
             "soil type": "loamy",
@@ -12,7 +12,7 @@
         {
             "id": "1",
             "crop name": "tomatoes",
-            "zone": "4",
+            "zone": "3",
             "planting month": "April",
             "shade ok": "no",
             "soil type": "loamy",
@@ -22,7 +22,7 @@
         {
             "id": "1",
             "crop name": "tomatoes",
-            "zone": "4",
+            "zone": "3",
             "planting month": "May",
             "shade ok": "no",
             "soil type": "loamy",
@@ -32,7 +32,7 @@
         {
             "id": "1",
             "crop name": "tomatoes",
-            "zone": "4",
+            "zone": "3",
             "planting month": "June",
             "shade ok": "no",
             "soil type": "loamy",
@@ -42,7 +42,7 @@
         {
             "id": "1",
             "crop name": "tomatoes",
-            "zone": "3",
+            "zone": "4",
             "planting month": "March",
             "shade ok": "no",
             "soil type": "loamy",
@@ -52,7 +52,7 @@
         {
             "id": "1",
             "crop name": "tomatoes",
-            "zone": "3",
+            "zone": "4",
             "planting month": "April",
             "shade ok": "no",
             "soil type": "loamy",
@@ -62,7 +62,7 @@
         {
             "id": "1",
             "crop name": "tomatoes",
-            "zone": "3",
+            "zone": "4",
             "planting month": "May",
             "shade ok": "no",
             "soil type": "loamy",
@@ -72,7 +72,7 @@
         {
             "id": "1",
             "crop name": "tomatoes",
-            "zone": "3",
+            "zone": "4",
             "planting month": "June",
             "shade ok": "no",
             "soil type": "loamy",

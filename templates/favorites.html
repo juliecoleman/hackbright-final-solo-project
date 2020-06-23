@@ -2,11 +2,16 @@
 
 {% block body %}
 
-  <h1 class="text-warning">Here are your favorites!</h1>
+  <h1 class="text-white">Here are your favorites!</h1>
 
   <br></br>
 
   <!--   <h2>{{crop_favorite_list}}</h2> -->
+
+  <h7 class="text-white"> {{condition_refined_dictionary_2}}</h7>
+
+  <h7 class="text-white"> {{condition_refined_dictionary}}</h7>
+
 
   {% for crop in crop_favorite_list %}
     <div class="card" style="width: 80rem;">
@@ -29,7 +34,7 @@
   {% endfor%}
 
 
-  <h2 class="text-warning">Return to homepage</h2>
+  <h2 class="text-white">Return to homepage</h2>
   <form action="/">
     <button type="submit" class="btn btn-info btn-lg">Homepage</button>
   </form>
