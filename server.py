@@ -98,6 +98,8 @@ def favorites():
 
     condition_refined_dictionary_2 = crud.get_crop_conditions_zone_month()
 
+    condition_refined_dictionary_3 = crud.get_crop_conditions_soil()
+
     return render_template('favorites.html', crop_favorite_list=crop_favorite_list, condition_refined_dictionary=condition_refined_dictionary, condition_refined_dictionary_2=condition_refined_dictionary_2)
 
 @app.route('/results')
