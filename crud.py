@@ -80,582 +80,1030 @@ def get_crop_recommendations(plant_hardiness_zone, planting_month, shade_ok,
                              soil_type, soil_ph, difficulty):
     """Get crop recommendations based on gardener user inputs."""
 
+    # if planting_month == 'unknown':
+
+    #     if plant_hardiness_zone == 'unknown':
+
+    #         if shade_ok == 'unknown':
+
+    #             if soil_ph == 'unknown':
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter().options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #             else:
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #         else:
+
+    #             if soil_ph == 'unknown':
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter( 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #             else:
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter( 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter( 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+    #     else:
+    #         if shade_ok == 'unknown':
+
+    #             if soil_ph == 'unknown':
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #             else:
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #         else:
+
+    #             if soil_ph == 'unknown':
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #             else:
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    # else:
+
+    #     if plant_hardiness_zone == 'unknown':
+
+    #         if shade_ok == 'unknown':
+
+    #             if soil_ph == 'unknown':
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter( 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #             else:
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #         else:
+
+    #             if soil_ph == 'unknown':
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month, 
+    #                             CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month, 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #             else:
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month, 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month, 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+    #     else:
+    #         if shade_ok == 'unknown':
+
+    #             if soil_ph == 'unknown':
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.planting_month == planting_month).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #             else:
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #         else:
+
+    #             if soil_ph == 'unknown':
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.planting_month == planting_month, 
+    #                             CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.planting_month == planting_month, 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    #             else:
+
+    #                 if difficulty == 'unknown':
+
+    #                     if soil_type == 'unknown':
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.planting_month == planting_month, 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+    #                             CropCondition.planting_month == planting_month, 
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                 else:
+
+    #                     if soil_type == 'unknown':
+
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    #                     else:
+    #                         crop_recommendations = CropCondition.query.filter(
+    #                             CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+    #                             CropCondition.planting_month == planting_month,
+    #                             CropCondition.shade_ok == shade_ok,
+    #                             CropCondition.soil_type == soil_type,
+    #                             CropCondition.difficulty == difficulty,
+    #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    if planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter().options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+                                CropCondition.soil_type == soil_type,
+                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter( 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter( 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.planting_month == planting_month).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month, 
+            CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter( 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+    
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.soil_type == soil_type,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+  
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+    
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter( 
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_type == soil_type,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month, 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month, 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+        
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+            CropCondition.planting_month == planting_month,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_type == soil_type,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+            CropCondition.planting_month == planting_month,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.planting_month == planting_month, 
+            CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month, 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.planting_month == planting_month, 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+            CropCondition.planting_month == planting_month,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.planting_month == planting_month, 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month == 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.planting_month == planting_month,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+            CropCondition.planting_month == planting_month,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+            CropCondition.planting_month == planting_month,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone,
+            CropCondition.planting_month == planting_month, 
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+            CropCondition.planting_month == planting_month,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
+
+    elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok != 'unknown' and soil_ph != 'unknown' and difficulty != 'unknown'and soil_type != 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
+            CropCondition.planting_month == planting_month,
+            CropCondition.shade_ok == shade_ok,
+            CropCondition.soil_type == soil_type,
+            CropCondition.difficulty == difficulty,
+            CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()  
+
+
     crop_list_recommendations = []
-
-    if planting_month == 'unknown':
-
-        if plant_hardiness_zone == 'unknown':
-
-            if shade_ok == 'unknown':
-
-                if soil_ph == 'unknown':
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter().options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                else:
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-            else:
-
-                if soil_ph == 'unknown':
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter( 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                else:
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter( 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter( 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-        else:
-            if shade_ok == 'unknown':
-
-                if soil_ph == 'unknown':
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                else:
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-            else:
-
-                if soil_ph == 'unknown':
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                else:
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-    else:
-
-        if plant_hardiness_zone == 'unknown':
-
-            if shade_ok == 'unknown':
-
-                if soil_ph == 'unknown':
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter( 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                else:
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-            else:
-
-                if soil_ph == 'unknown':
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month, 
-                                CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month, 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                else:
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month, 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month, 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-        else:
-            if shade_ok == 'unknown':
-
-                if soil_ph == 'unknown':
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.planting_month == planting_month).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                else:
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-            else:
-
-                if soil_ph == 'unknown':
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.planting_month == planting_month, 
-                                CropCondition.shade_ok == shade_ok).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.planting_month == planting_month, 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
-
-
-                else:
-
-                    if difficulty == 'unknown':
-
-                        if soil_type == 'unknown':
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.planting_month == planting_month, 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone,
-                                CropCondition.planting_month == planting_month, 
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                    else:
-
-                        if soil_type == 'unknown':
-
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-                        else:
-                            crop_recommendations = CropCondition.query.filter(
-                                CropCondition.plant_hardiness_zone == plant_hardiness_zone, 
-                                CropCondition.planting_month == planting_month,
-                                CropCondition.shade_ok == shade_ok,
-                                CropCondition.soil_type == soil_type,
-                                CropCondition.difficulty == difficulty,
-                                CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
-
-    crop_dictionary = {}                        
+    #This list inclides dictionaries of all recommended crops from query results.
+
+    crop_list_name_tracker = []
+    #This list keeps track of names of crops in query results so that the same
+    #crop will not be in results more than once                 
 
     for crop_recommendation in crop_recommendations:
-        if crop_recommendation.crop_name not in crop_dictionary.values():
+        crop_dictionary = {}
+        
         #Note I have to have this check in addition to one below for all
         #crops to not be repeated. Such as this one was needed for parsley,
         #but the one below was needed for summer squash. Not sure why this
         #repetitive code is needed to avoid this but yet.
-            crop_dictionary['planting_month'] = crop_recommendation.planting_month
-            crop_dictionary['shade_ok'] = crop_recommendation.shade_ok
-            crop_dictionary['soil_type'] = crop_recommendation.soil_type
-            crop_dictionary['soil_ph'] = crop_recommendation.soil_ph
-            crop_dictionary['difficulty'] = crop_recommendation.difficulty
-            crop_dictionary['name'] = crop_recommendation.crop_name
-            # crop_dictionary['planting_consideration'] = crop_recommendation.crop.crop_planting_considerations
-            crop_dictionary['growing_from_seed'] = crop_recommendation.crop.crop_growing_from_seed
-            crop_dictionary['transplanting'] = crop_recommendation.crop.crop_transplanting
-            crop_dictionary['spacing'] = crop_recommendation.crop.crop_spacing
-            crop_dictionary['watering'] = crop_recommendation.crop.crop_watering
-            crop_dictionary['feeding'] = crop_recommendation.crop.crop_feeding
-            crop_dictionary['crop_id'] = crop_recommendation.crop.crop_id
-            crop_dictionary['image_url'] = crop_recommendation.crop.crop_image_url
+        crop_dictionary['planting_month'] = crop_recommendation.planting_month
+        crop_dictionary['shade_ok'] = crop_recommendation.shade_ok
+        crop_dictionary['soil_type'] = crop_recommendation.soil_type
+        crop_dictionary['soil_ph'] = crop_recommendation.soil_ph
+        crop_dictionary['difficulty'] = crop_recommendation.difficulty
+        crop_dictionary['name'] = crop_recommendation.crop_name
+        # crop_dictionary['planting_consideration'] = crop_recommendation.crop.crop_planting_considerations
+        crop_dictionary['growing_from_seed'] = crop_recommendation.crop.crop_growing_from_seed
+        crop_dictionary['transplanting'] = crop_recommendation.crop.crop_transplanting
+        crop_dictionary['spacing'] = crop_recommendation.crop.crop_spacing
+        crop_dictionary['watering'] = crop_recommendation.crop.crop_watering
+        crop_dictionary['feeding'] = crop_recommendation.crop.crop_feeding
+        crop_dictionary['crop_id'] = crop_recommendation.crop.crop_id
+        crop_dictionary['image_url'] = crop_recommendation.crop.crop_image_url
 
-            print ('PPPPPPPPPPPPPPPPPP')
-            print(crop_dictionary)
-            if crop_dictionary not in crop_list_recommendations:
-                crop_list_recommendations.append(crop_dictionary)
+        print ('PPPPPPPPPPPPPPPPPP')
+        print(crop_dictionary)
+        print(crop_dictionary['name'])
+        # if crop_dictionary not in crop_list_recommendations:
 
-            print('ooooooooooooooooooooo')
-            print(crop_list_recommendations)
+
+        if crop_dictionary['name'] not in crop_list_name_tracker:
+
+            print('xxxxxxxxxxxxxxxxxxxxxxx')
+            crop_list_recommendations.append(crop_dictionary)
+
+        crop_list_name_tracker.append(crop_dictionary['name'])
+        print('***************')
+        print(crop_list_name_tracker)
+
+        print('ooooooooooooooooooooo')
+        print(crop_list_recommendations)
 
 
     return crop_list_recommendations
@@ -800,3 +1248,4 @@ def check_crop_favorites(crop_id, gardener_id):
 if __name__ == '__main__':
     from server import app
     connect_to_db(app)
+

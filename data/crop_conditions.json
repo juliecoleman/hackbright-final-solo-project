@@ -2,6 +2,26 @@
         {
             "id": "1",
             "crop name": "tomatoes",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "1",
+            "crop name": "tomatoes",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "1",
+            "crop name": "tomatoes",
             "zone": "3",
             "planting month": "March",
             "shade ok": "no",
@@ -1198,6 +1218,26 @@
             "soil type": "loamy",
             "soil pH": "moderately alkaline",
             "difficulty": "average"
+        },
+        {
+            "id": "2",
+            "crop name": "basil",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "2",
+            "crop name": "basil",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "easy"
         },
         {
             "id": "2",
@@ -1522,6 +1562,26 @@
         {
             "id": "3",
             "crop name": "lettuce",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "3",
+            "crop name": "lettuce",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "3",
+            "crop name": "lettuce",
             "zone": "3",
             "planting month": "April",
             "shade ok": "yes",
@@ -2112,6 +2172,26 @@
         {
             "id": "4",
             "crop name": "carrots",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "4",
+            "crop name": "carrots",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "4",
+            "crop name": "carrots",
             "zone": "3",
             "planting month": "May",
             "shade ok": "no",
@@ -3248,6 +3328,26 @@
             "soil type": "sandy",
             "soil pH": "moderately acidic",
             "difficulty": "average"
+        },
+        {
+            "id": "5",
+            "crop name": "asparagus",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "5",
+            "crop name": "asparagus",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
         },
         {
             "id": "5",
@@ -3502,6 +3602,26 @@
         {
             "id": "6",
             "crop name": "beans",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "6",
+            "crop name": "beans",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "6",
+            "crop name": "beans",
             "zone": "3",
             "planting month": "May",
             "shade ok": "no",
@@ -3748,6 +3868,26 @@
             "soil type": "loamy",
             "soil pH": "moderately alkaline",
             "difficulty": "easy"
+        },
+        {
+            "id": "7",
+            "crop name": "beets",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "7",
+            "crop name": "beets",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
         },
         {
             "id": "7",
@@ -4028,6 +4168,26 @@
             "soil type": "loamy and sandy",
             "soil pH": "moderately alkaline",
             "difficulty": "average"
+        },
+        {
+            "id": "8",
+            "crop name": "broccoli",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "8",
+            "crop name": "broccoli",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
         },
         {
             "id": "8",
@@ -4712,6 +4872,26 @@
         {
             "id": "9",
             "crop name": "brussel sprouts",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "9",
+            "crop name": "brussel sprouts",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "9",
+            "crop name": "brussel sprouts",
             "zone": "3",
             "planting month": "March",
             "shade ok": "no",
@@ -5234,6 +5414,26 @@
             "crop name": "brussel sprouts",
             "zone": "10",
             "planting month": "October",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "10",
+            "crop name": "cabbage",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "10",
+            "crop name": "cabbage",
+            "zone": "11",
+            "planting month": "n/a",
             "shade ok": "no",
             "soil type": "loamy and sandy",
             "soil pH": "moderately alkaline",
@@ -5646,6 +5846,26 @@
             "planting month": "December",
             "shade ok": "no",
             "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "11",
+            "crop name": "cauliflower",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "11",
+            "crop name": "cauliflower",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
             "soil pH": "moderately alkaline",
             "difficulty": "difficult"
         },
@@ -6332,6 +6552,26 @@
         {
             "id": "12",
             "crop name": "celery",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "12",
+            "crop name": "celery",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "12",
+            "crop name": "celery",
             "zone": "3",
             "planting month": "February",
             "shade ok": "yes",
@@ -6972,6 +7212,26 @@
         {
             "id": "14",
             "crop name": "collard greens",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "14",
+            "crop name": "collard greens",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "14",
+            "crop name": "collard greens",
             "zone": "3",
             "planting month": "April",
             "shade ok": "no",
@@ -7408,6 +7668,16 @@
             "soil type": "loamy",
             "soil pH": "moderately alkaline",
             "difficulty": "easy"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "difficult"
         },
         {
             "id": "15",
@@ -7697,6 +7967,586 @@
             "shade ok": "no",
             "soil type": "loamy",
             "soil pH": "acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "2",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "2",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "2",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "3",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "3",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "3",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "4",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "4",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "4",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "5",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "6",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "9",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "9",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "9",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "9",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "10",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "10",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "10",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "10",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "2",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "2",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "2",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "3",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "3",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "3",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "4",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "4",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "4",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "5",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "6",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "7",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "8",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "9",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "9",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "9",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "9",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "10",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "10",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "10",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "15",
+            "crop name": "cucumbers",
+            "zone": "10",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
             "difficulty": "difficult"
         },
         {
@@ -8372,6 +9222,36 @@
         {
             "id": "19",
             "crop name": "garlic",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "19",
+            "crop name": "garlic",
+            "zone": "10",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "19",
+            "crop name": "garlic",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "19",
+            "crop name": "garlic",
             "zone": "3",
             "planting month": "September",
             "shade ok": "no",
@@ -8725,6 +9605,16 @@
             "zone": "8",
             "planting month": "November",
             "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "20",
+            "crop name": "kale",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
             "soil type": "loamy",
             "soil pH": "moderately alkaline",
             "difficulty": "easy"
@@ -9502,6 +10392,26 @@
         {
             "id": "22",
             "crop name": "parsnips",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "22",
+            "crop name": "parsnips",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "22",
+            "crop name": "parsnips",
             "zone": "3",
             "planting month": "May",
             "shade ok": "no",
@@ -9942,6 +10852,26 @@
         {
             "id": "23",
             "crop name": "peas",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "23",
+            "crop name": "peas",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "23",
+            "crop name": "peas",
             "zone": "3",
             "planting month": "April",
             "shade ok": "yes",
@@ -10177,6 +11107,26 @@
             "shade ok": "yes",
             "soil type": "loamy",
             "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "24",
+            "crop name": "bell pepper",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "24",
+            "crop name": "bell pepper",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
             "difficulty": "easy"
         },
         {
@@ -10482,6 +11432,26 @@
         {
             "id": "25",
             "crop name": "potatoes",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "25",
+            "crop name": "potatoes",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "25",
+            "crop name": "potatoes",
             "zone": "3",
             "planting month": "May",
             "shade ok": "no",
@@ -10698,6 +11668,2336 @@
             "soil type": "sandy",
             "soil pH": "acidic",
             "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "3",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "4",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "5",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "5",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "5",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "6",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "6",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "6",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "7",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "7",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "8",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "8",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "9",
+            "planting month": "March",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "9",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "9",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "10",
+            "planting month": "March",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "10",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "10",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "2",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "2",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "March",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "September",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "March",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "September",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "September",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "October",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "September",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "October",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "9",
+            "planting month": "February",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "9",
+            "planting month": "March",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "9",
+            "planting month": "October",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "9",
+            "planting month": "November",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "10",
+            "planting month": "February",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "10",
+            "planting month": "March",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "10",
+            "planting month": "October",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "10",
+            "planting month": "November",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "3",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "3",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "3",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "3",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "4",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "4",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "4",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "4",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "February",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "March",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "October",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "February",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "March",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "October",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "3",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "4",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "5",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "5",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "5",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "6",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "6",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "6",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "7",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "7",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "8",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "8",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "9",
+            "planting month": "March",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "9",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "9",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "10",
+            "planting month": "March",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "10",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "26",
+            "crop name": "pumpkins",
+            "zone": "10",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "2",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "2",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "3",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "4",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "March",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "5",
+            "planting month": "September",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "March",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "6",
+            "planting month": "September",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "September",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "7",
+            "planting month": "October",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "April",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "May",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "June",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "July",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "August",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "September",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "8",
+            "planting month": "October",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "9",
+            "planting month": "February",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "9",
+            "planting month": "March",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "9",
+            "planting month": "October",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "9",
+            "planting month": "November",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "10",
+            "planting month": "February",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "10",
+            "planting month": "March",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "10",
+            "planting month": "October",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "27",
+            "crop name": "radishes",
+            "zone": "10",
+            "planting month": "November",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "3",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "3",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "3",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "3",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "4",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "4",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "4",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "4",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "5",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "6",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "7",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "8",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "February",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "March",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "9",
+            "planting month": "October",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "February",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "March",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "April",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "May",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "June",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "July",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "August",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "September",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "28",
+            "crop name": "rhubarb",
+            "zone": "10",
+            "planting month": "October",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
         },
         {
             "id": "26",
@@ -11842,13 +15142,32 @@
         {
             "id": "29",
             "crop name": "spinach",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "29",
+            "crop name": "spinach",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "29",
+            "crop name": "spinach",
             "zone": "3",
             "planting month": "April",
             "shade ok": "yes",
             "soil type": "loamy",
             "soil pH": "moderately alkaline",
-            "difficulty": "difficult",
-            "undefined": "neutral"
+            "difficulty": "difficult"
         },
         {
             "id": "29",
@@ -12223,6 +15542,26 @@
         {
             "id": "30",
             "crop name": "summer squash",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "30",
+            "crop name": "summer squash",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "30",
+            "crop name": "summer squash",
             "zone": "3",
             "planting month": "June",
             "shade ok": "no",
@@ -12419,6 +15758,26 @@
             "soil type": "loamy",
             "soil pH": "moderately alkaline",
             "difficulty": "average"
+        },
+        {
+            "id": "31",
+            "crop name": "chard",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "31",
+            "crop name": "chard",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
         },
         {
             "id": "31",
@@ -12903,6 +16262,26 @@
         {
             "id": "32",
             "crop name": "turnips",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "32",
+            "crop name": "turnips",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "32",
+            "crop name": "turnips",
             "zone": "3",
             "planting month": "April",
             "shade ok": "yes",
@@ -13343,6 +16722,26 @@
         {
             "id": "34",
             "crop name": "winter squash",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "34",
+            "crop name": "winter squash",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "34",
+            "crop name": "winter squash",
             "zone": "3",
             "planting month": "June",
             "shade ok": "no",
@@ -13883,6 +17282,26 @@
         {
             "id": "36",
             "crop name": "oregano",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "36",
+            "crop name": "oregano",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "36",
+            "crop name": "oregano",
             "zone": "3",
             "planting month": "March",
             "shade ok": "no",
@@ -14203,6 +17622,26 @@
         {
             "id": "37",
             "crop name": "rosemary",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "37",
+            "crop name": "rosemary",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "37",
+            "crop name": "rosemary",
             "zone": "3",
             "planting month": "March",
             "shade ok": "no",
@@ -15283,6 +18722,26 @@
         {
             "id": "39",
             "crop name": "parsley",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "39",
+            "crop name": "parsley",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "39",
+            "crop name": "parsley",
             "zone": "3",
             "planting month": "March",
             "shade ok": "yes",
@@ -15603,6 +19062,26 @@
         {
             "id": "40",
             "crop name": "mint",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "40",
+            "crop name": "mint",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "40",
+            "crop name": "mint",
             "zone": "3",
             "planting month": "March",
             "shade ok": "no",
@@ -15917,6 +19396,26 @@
             "planting month": "December",
             "shade ok": "no",
             "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "41",
+            "crop name": "sage",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "41",
+            "crop name": "sage",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
             "soil pH": "moderately alkaline",
             "difficulty": "easy"
         },
@@ -16237,6 +19736,36 @@
             "planting month": "October",
             "shade ok": "no",
             "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "43",
+            "crop name": "okra",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "43",
+            "crop name": "okra",
+            "zone": "3",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "easy"
+        },
+        {
+            "id": "43",
+            "crop name": "okra",
+            "zone": "4",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
             "soil pH": "moderately alkaline",
             "difficulty": "easy"
         },
@@ -16313,6 +19842,16 @@
         {
             "id": "44",
             "crop name": "sweet potato",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "44",
+            "crop name": "sweet potato",
             "zone": "3",
             "planting month": "February",
             "shade ok": "no",
@@ -16749,6 +20288,26 @@
             "soil type": "loamy",
             "soil pH": "acidic",
             "difficulty": "difficult"
+        },
+        {
+            "id": "45",
+            "crop name": "dill",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "45",
+            "crop name": "dill",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "easy"
         },
         {
             "id": "45",

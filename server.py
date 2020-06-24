@@ -86,25 +86,25 @@ def add_favorite():
         favorite_crop = crud.create_favorite_crop(gardener_id, crop_id)
         return "Added to favorites!"
 
-# @app.route('/favorites')
-# def favorites():
-#     """View all favorite crops."""
+@app.route('/favorites')
+def favorites():
+    """View all favorite crops."""
 
-#     gardener_id = session['gardener_id']
+    gardener_id = session['gardener_id']
 
-#     crop_favorite_list = crud.get_crop_favorites(gardener_id)
+    crop_favorite_list = crud.get_crop_favorites(gardener_id)
 
-#     shade_difficulty_dictionary = crud.get_crop_conditions_shade_difficulty()
+    shade_difficulty_dictionary = crud.get_crop_conditions_shade_difficulty()
 
-#     zone_month_dictionary = crud.get_crop_conditions_zone_month()
+    zone_month_dictionary = crud.get_crop_conditions_zone_month()
 
-#     soil_dictionary = crud.get_crop_conditions_soil()
+    soil_dictionary = crud.get_crop_conditions_soil()
 
-#     return render_template('favorites.html', 
-#         crop_favorite_list=crop_favorite_list, 
-#         shade_difficulty_dictionary=shade_difficulty_dictionary, 
-#         zone_month_dictionary=zone_month_dictionary, 
-#         soil_dictionary=soil_dictionary)
+    return render_template('favorites.html', 
+        crop_favorite_list=crop_favorite_list, 
+        shade_difficulty_dictionary=shade_difficulty_dictionary, 
+        zone_month_dictionary=zone_month_dictionary, 
+        soil_dictionary=soil_dictionary)
 
 @app.route('/results')
 def results():
