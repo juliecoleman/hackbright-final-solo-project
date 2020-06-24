@@ -80,7 +80,7 @@ def get_crop_recommendations(plant_hardiness_zone, planting_month, shade_ok,
                              soil_type, soil_ph, difficulty):
     """Get crop recommendations based on gardener user inputs."""
 
-    crop_list = []
+    crop_list_recommendations = []
 
     if planting_month == 'unknown':
 
@@ -626,30 +626,39 @@ def get_crop_recommendations(plant_hardiness_zone, planting_month, shade_ok,
                                 CropCondition.difficulty == difficulty,
                                 CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
 
-
+    crop_dictionary = {}                        
 
     for crop_recommendation in crop_recommendations:
-        crop_dictionary = {}
-        crop_dictionary['planting_month'] = crop_recommendation.planting_month
-        crop_dictionary['shade_ok'] = crop_recommendation.shade_ok
-        crop_dictionary['soil_type'] = crop_recommendation.soil_type
-        crop_dictionary['soil_ph'] = crop_recommendation.soil_ph
-        crop_dictionary['difficulty'] = crop_recommendation.difficulty
-        crop_dictionary['name'] = crop_recommendation.crop_name
-        crop_dictionary['planting_consideration'] = crop_recommendation.crop.crop_planting_considerations
-        crop_dictionary['growing_from_seed'] = crop_recommendation.crop.crop_growing_from_seed
-        crop_dictionary['transplanting'] = crop_recommendation.crop.crop_transplanting
-        crop_dictionary['spacing'] = crop_recommendation.crop.crop_spacing
-        crop_dictionary['watering'] = crop_recommendation.crop.crop_watering
-        crop_dictionary['feeding'] = crop_recommendation.crop.crop_feeding
-        crop_dictionary['crop_id'] = crop_recommendation.crop.crop_id
-        crop_dictionary['image_url'] = crop_recommendation.crop.crop_image_url
+        if crop_recommendation.crop_name not in crop_dictionary.values():
+        #Note I have to have this check in addition to one below for all
+        #crops to not be repeated. Such as this one was needed for parsley,
+        #but the one below was needed for summer squash. Not sure why this
+        #repetitive code is needed to avoid this but yet.
+            crop_dictionary['planting_month'] = crop_recommendation.planting_month
+            crop_dictionary['shade_ok'] = crop_recommendation.shade_ok
+            crop_dictionary['soil_type'] = crop_recommendation.soil_type
+            crop_dictionary['soil_ph'] = crop_recommendation.soil_ph
+            crop_dictionary['difficulty'] = crop_recommendation.difficulty
+            crop_dictionary['name'] = crop_recommendation.crop_name
+            # crop_dictionary['planting_consideration'] = crop_recommendation.crop.crop_planting_considerations
+            crop_dictionary['growing_from_seed'] = crop_recommendation.crop.crop_growing_from_seed
+            crop_dictionary['transplanting'] = crop_recommendation.crop.crop_transplanting
+            crop_dictionary['spacing'] = crop_recommendation.crop.crop_spacing
+            crop_dictionary['watering'] = crop_recommendation.crop.crop_watering
+            crop_dictionary['feeding'] = crop_recommendation.crop.crop_feeding
+            crop_dictionary['crop_id'] = crop_recommendation.crop.crop_id
+            crop_dictionary['image_url'] = crop_recommendation.crop.crop_image_url
 
-        if crop_dictionary not in crop_list:
-            crop_list.append(crop_dictionary)
+            print ('PPPPPPPPPPPPPPPPPP')
+            print(crop_dictionary)
+            if crop_dictionary not in crop_list_recommendations:
+                crop_list_recommendations.append(crop_dictionary)
+
+            print('ooooooooooooooooooooo')
+            print(crop_list_recommendations)
 
 
-    return crop_list
+    return crop_list_recommendations
 
 def get_crop_favorites(gardener_id):
     """Get favorite crops for a gardener user."""
