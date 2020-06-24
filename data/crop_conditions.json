@@ -8552,6 +8552,56 @@
         {
             "id": "16",
             "crop name": "sweet corn",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "16",
+            "crop name": "sweet corn",
+            "zone": "3",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "16",
+            "crop name": "sweet corn",
+            "zone": "9",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "16",
+            "crop name": "sweet corn",
+            "zone": "10",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "16",
+            "crop name": "sweet corn",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "moderately acidic",
+            "difficulty": "average"
+        },
+        {
+            "id": "16",
+            "crop name": "sweet corn",
             "zone": "4",
             "planting month": "June",
             "shade ok": "no",
@@ -8598,6 +8648,26 @@
             "soil type": "loamy",
             "soil pH": "moderately acidic",
             "difficulty": "average"
+        },
+        {
+            "id": "17",
+            "crop name": "eggplant",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "17",
+            "crop name": "eggplant",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "sandy",
+            "soil pH": "moderately acidic",
+            "difficulty": "difficult"
         },
         {
             "id": "17",
@@ -8898,6 +8968,26 @@
             "soil type": "sandy",
             "soil pH": "moderately acidic",
             "difficulty": "difficult"
+        },
+        {
+            "id": "18",
+            "crop name": "onion",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "18",
+            "crop name": "onion",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
         },
         {
             "id": "18",
@@ -9223,6 +9313,16 @@
             "id": "19",
             "crop name": "garlic",
             "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "no",
+            "soil type": "loamy",
+            "soil pH": "acidic",
+            "difficulty": "easy"
+        },
+        {
+            "id": "19",
+            "crop name": "garlic",
+            "zone": "9",
             "planting month": "n/a",
             "shade ok": "no",
             "soil type": "loamy",
