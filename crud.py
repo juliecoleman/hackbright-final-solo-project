@@ -625,6 +625,10 @@ def get_crop_recommendations(plant_hardiness_zone, planting_month, shade_ok,
     #                             CropCondition.soil_ph == soil_ph).options(db.joinedload('crop')).all()
 
 
+    # crop_recommendations = CropCondition.query.filter().options(db.joinedload('crop')).all()
+
+
+
     if planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
         crop_recommendations = CropCondition.query.filter().options(db.joinedload('crop')).all()
 
@@ -650,6 +654,10 @@ def get_crop_recommendations(plant_hardiness_zone, planting_month, shade_ok,
     elif planting_month != 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty == 'unknown' and soil_type == 'unknown':
         crop_recommendations = CropCondition.query.filter(
             CropCondition.planting_month == planting_month).options(db.joinedload('crop')).all()
+
+    elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
+        crop_recommendations = CropCondition.query.filter(
+            CropCondition.difficulty == difficulty).options(db.joinedload('crop')).all()
 
 
     elif planting_month == 'unknown' and plant_hardiness_zone == 'unknown' and shade_ok == 'unknown' and soil_ph != 'unknown' and difficulty == 'unknown' and soil_type != 'unknown':
@@ -854,7 +862,7 @@ def get_crop_recommendations(plant_hardiness_zone, planting_month, shade_ok,
             CropCondition.plant_hardiness_zone == plant_hardiness_zone,
             CropCondition.planting_month == planting_month,
             CropCondition.soil_type == soil_type).options(db.joinedload('crop')).all()
-        
+
 
     elif planting_month != 'unknown' and plant_hardiness_zone != 'unknown' and shade_ok == 'unknown' and soil_ph == 'unknown' and difficulty != 'unknown' and soil_type == 'unknown':
         crop_recommendations = CropCondition.query.filter(

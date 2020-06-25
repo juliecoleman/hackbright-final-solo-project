@@ -3342,6 +3342,16 @@
         {
             "id": "5",
             "crop name": "asparagus",
+            "zone": "10",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "difficult"
+        },
+        {
+            "id": "5",
+            "crop name": "asparagus",
             "zone": "11",
             "planting month": "n/a",
             "shade ok": "yes",
@@ -6888,6 +6898,26 @@
             "soil type": "loamy and sandy",
             "soil pH": "moderately alkaline",
             "difficulty": "difficult"
+        },
+        {
+            "id": "13",
+            "crop name": "chives",
+            "zone": "2",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
+        },
+        {
+            "id": "13",
+            "crop name": "chives",
+            "zone": "11",
+            "planting month": "n/a",
+            "shade ok": "yes",
+            "soil type": "loamy and sandy",
+            "soil pH": "moderately alkaline",
+            "difficulty": "average"
         },
         {
             "id": "13",
