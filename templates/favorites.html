@@ -17,7 +17,9 @@
 
   {% for crop in crop_favorite_list %}
     <div class="card" style="width: 80rem;">
-      <img src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}" style="width: 20rem;">
+      <img 
+      src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}" 
+      style="width: 20rem;">
 
       <div class="card-body">
         <h3>Name: {{crop['name']}}</h3>
@@ -42,11 +44,16 @@
           10: {{zone_month_dictionary[crop['crop_id']][10]|join(', ')}}<br></br>
           11: {{zone_month_dictionary[crop['crop_id']][11]|join(', ')}}<br></br>
         </li>
-        <li class="list-group-item">Shade preference: {{shade_difficulty_dictionary[crop['crop_id']]['shade_ok']}}</li>
-        <li class="list-group-item">Soil type preference: {{soil_dictionary[crop['crop_id']]['soil_type']|join(', ')}}</li>
-        <li class="list-group-item">Soil pH preference: {{soil_dictionary[crop['crop_id']]['soil_ph']|join(', ')}}</li>
-        <li class="list-group-item">Difficulty: {{shade_difficulty_dictionary[crop['crop_id']]['difficulty']}}</li>
-        <li class="list-group-item">Crop ID: {{crop['crop_id']}}</li>
+        <li class="list-group-item">
+        Shade preference: {{shade_difficulty_dictionary[crop['crop_id']]['shade_ok']}}</li>
+        <li class="list-group-item">
+        Soil type preference: {{soil_dictionary[crop['crop_id']]['soil_type']|join(', ')}}</li>
+        <li class="list-group-item">
+        Soil pH preference: {{soil_dictionary[crop['crop_id']]['soil_ph']|join(', ')}}</li>
+        <li class="list-group-item">
+        Difficulty: {{shade_difficulty_dictionary[crop['crop_id']]['difficulty']}}</li>
+        <li class="list-group-item">
+        Crop ID: {{crop['crop_id']}}</li>
       </ul>
     </div>
     <br></br>

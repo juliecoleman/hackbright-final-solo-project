@@ -21,6 +21,7 @@ def homepage():
 
     return render_template('homepage.html')
 
+
 @app.route('/create-gardener', methods=['POST'])
 def register_gardener():
     """Create a new gardener user."""
@@ -36,6 +37,7 @@ def register_gardener():
         flash('Your Garden Knowledge account is created. Now please log in.')
 
     return redirect('/')
+
 
 @app.route('/login', methods=['POST'])
 def login_gardener():
@@ -59,6 +61,7 @@ def login_gardener():
 
     return redirect('/')
 
+
 @app.route('/logout')
 def logout_gardener():
     """Log out gardener user."""
@@ -68,6 +71,7 @@ def logout_gardener():
     flash('You are logged out.')
 
     return redirect('/')
+
 
 @app.route('/create-favorite', methods=['POST'])
 def add_favorite():
@@ -85,6 +89,7 @@ def add_favorite():
     else:
         favorite_crop = crud.create_favorite_crop(gardener_id, crop_id)
         return "Added to favorites!"
+
 
 @app.route('/favorites')
 def favorites():
@@ -105,6 +110,7 @@ def favorites():
         shade_difficulty_dictionary=shade_difficulty_dictionary, 
         zone_month_dictionary=zone_month_dictionary, 
         soil_dictionary=soil_dictionary)
+    
 
 @app.route('/results')
 def results():

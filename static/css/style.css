@@ -21,3 +21,7 @@ body {
 .tooltip .arrow:before {
     border-right-color: #00acd6;
 }
+
+.material-icons {
+  font-size: 16px;
+}

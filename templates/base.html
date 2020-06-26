@@ -12,6 +12,10 @@
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
   crossorigin="anonymous">
+  <!-- For show/hide eye icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Bootstrap show/hide password -->
+  <script src="bootstrap-show-password.js"></script>
 
   <!-- Our custom style -->
   <link rel="stylesheet"
@@ -37,11 +41,11 @@
       <div id="log-in">
         <h4>Log in</h4>
         <form action = "/login" class="form-inline" method="POST">
-          <label for="username">username</label>
-          <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
-
-          <label for="password">password</label>
-          <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
+          <label for="username">username</label>&nbsp;
+          <input type = "text" class="form-control form-control col-2" id="username" name="username">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="password">password</label>&nbsp;
+          <input type = "password" class="form-control form-control col-6" data-eye-class="material-icons" data-eye-open-class="visibility" data-eye-close-class="visibility_off" data-eye-class-position-inside="true" id="password" name="password">   
 
           <button type="submit" class="btn btn-info">Log In</button>
         </form>
@@ -56,11 +60,11 @@
       <div id="create-account">
         <h4>Create account</h4>
         <form action = "/create-gardener" class="form-inline" method="POST">
-          <label for="username">username</label>
-          <input type = "text" class="form-control form-control-sm col-2" id="username" name="username">
-
-          <label for="password">password</label>
-          <input type = "text" class="form-control form-control-sm col-2" id="password" name="password">   
+          <label for="username">username</label>&nbsp;
+          <input type = "text" class="form-control form-control col-2" id="username" name="username">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="password">password</label>&nbsp;
+          <input type = "password" class="form-control form-control col-6" data-eye-class="material-icons" data-eye-open-class="visibility" data-eye-close-class="visibility_off" data-eye-class-position-inside="true" id="password" data-toggle="password" name="password">   
 
           <button type="submit" class="btn btn-info" onClick="showLogIn()">Create Account</button>
         </form>
@@ -101,15 +105,21 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+  </script>
   <script 
   src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+  </script>
   <script 
   src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+  </script>
+  <script 
+  src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js">
+  </script>
 
   <script src="/static/js/homepage.js"></script>
 

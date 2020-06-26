@@ -21,7 +21,9 @@
 
     <h3 class="text-warning">From your zipcode, your plant hardiness zone is {{plant_hardiness_zone}}.
       <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-      data-toggle="tooltip" data-placement="right" title="Here is an image of the plant hardiness zones in the US for reference. <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
+      data-toggle="tooltip" data-placement="right" 
+      title="Here is an image of the plant hardiness zones in the US for reference. 
+      <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
       <br></br>These results are based on your inputs: 
       <br></br>-Planting in {{crop_list[0]['planting_month']}}
       <br></br>-Shade: {{crop_list[0]['shade_ok']}}
@@ -37,7 +39,8 @@
 
   
     <div class="card" style="width: 80rem;">
-      <img src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}" style="width: 20rem;">
+      <img src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}" 
+      style="width: 20rem;">
 
       <div class="card-body">
         <h4>Name: {{crop['name']}}</h4>
@@ -61,22 +64,28 @@
           10: {{zone_month_dictionary[crop['crop_id']][10]|join(', ')}}<br></br>
           11: {{zone_month_dictionary[crop['crop_id']][11]|join(', ')}}<br></br>
         </li>
-        <li class="list-group-item">Shade preference: {{shade_difficulty_dictionary[crop['crop_id']]['shade_ok']}}</li>
-        <li class="list-group-item">Soil type preference: {{soil_dictionary[crop['crop_id']]['soil_type']|join(', ')}}</li>
-        <li class="list-group-item">Soil pH preference: {{soil_dictionary[crop['crop_id']]['soil_ph']|join(', ')}}</li>
-        <li class="list-group-item">Difficulty: {{shade_difficulty_dictionary[crop['crop_id']]['difficulty']}}</li>
-        <li class="list-group-item">Crop ID: {{crop['crop_id']}}</li>
+        <li class="list-group-item">
+        Shade preference: {{shade_difficulty_dictionary[crop['crop_id']]['shade_ok']}}</li>
+        <li class="list-group-item">
+        Soil type preference: {{soil_dictionary[crop['crop_id']]['soil_type']|join(', ')}}</li>
+        <li class="list-group-item">
+        Soil pH preference: {{soil_dictionary[crop['crop_id']]['soil_ph']|join(', ')}}</li>
+        <li class="list-group-item">
+        Difficulty: {{shade_difficulty_dictionary[crop['crop_id']]['difficulty']}}</li>
+        <li class="list-group-item">
+        Crop ID: {{crop['crop_id']}}</li>
       </ul>
 
 {#    <form action="/create-favorite" method="POST" class="add-favorite">
       <input type="hidden" name="crop_id" value="{{crop['crop_id']}}" id="crop_id-field"/>
  #}   
       <div class="card-body">
-        <button type="submit" class="btn btn-info" aria-pressed="true" onclick="addFavorite({{crop['crop_id']}})">Add to favorites</button>
+        <button type="submit" class="btn btn-info" aria-pressed="true" 
+        onclick="addFavorite({{crop['crop_id']}})">Add to favorites</button>
       </div>
 
     </div>
-{#    </form> #} 
+
   
     <br></br>
   {% endfor%}
@@ -100,7 +109,7 @@
       </div>
     </div>
   </div>
-  {# class="add-favorite" #}
+
 
   <br></br>
 

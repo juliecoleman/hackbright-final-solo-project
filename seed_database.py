@@ -39,10 +39,10 @@ for crop in crop_data:
     crop_image_url = crop['image_url']
 
     db_crop = crud.create_crop(crop_id, crop_name, crop_description, crop_sun, 
-        crop_soil, crop_planting_considerations, crop_when_to_plant, crop_transplanting,
-        crop_growing_from_seed, crop_spacing, crop_watering, crop_feeding, 
-        crop_other_care, crop_diseases, crop_pests, crop_harvesting, 
-        crop_storage_use, crop_image_url)
+        crop_soil, crop_planting_considerations, crop_when_to_plant, 
+        crop_transplanting, crop_growing_from_seed, crop_spacing, crop_watering, 
+        crop_feeding, crop_other_care, crop_diseases, crop_pests, 
+        crop_harvesting, crop_storage_use, crop_image_url)
 
     crops_in_db.append(db_crop)
 
@@ -63,7 +63,8 @@ for crop_condition in crop_condition_data:
     difficulty = crop_condition['difficulty']
 
     db_crop_condition = crud.create_crop_conditions(crop_id,
-        crop_name, plant_hardiness_zone, planting_month, shade_ok, soil_type, soil_ph, difficulty)
+        crop_name, plant_hardiness_zone, planting_month, shade_ok, soil_type, 
+        soil_ph, difficulty)
 
     crop_conditions_in_db.append(db_crop_condition)
 
