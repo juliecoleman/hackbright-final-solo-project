@@ -8,87 +8,113 @@
 
   <h5>{{crop_list}}</h5> #}
 
-  {% if not crop_list %}
+  <div class="card" style="width: 50rem;">
 
-    <h1 class="text-white">Sorry, there were no results matching your search</h1>
-    <br></br>
+    {% if not crop_list %}
 
-  {% else %}
+      <h1 class="text-info">Sorry, there were no results matching your search</h1>
+      <br></br>
 
-    <h1 class="text-white">Here are your results!</h1>
-    <br></br>
+    {% else %}
 
-
-    <h3 class="text-warning">From your zipcode, your plant hardiness zone is {{plant_hardiness_zone}}.
-      <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-      data-toggle="tooltip" data-placement="right" 
-      title="Here is an image of the plant hardiness zones in the US for reference. 
-      <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
-      <br></br>These results are based on your inputs: 
-      <br></br>-Planting in {{crop_list[0]['planting_month']}}
-      <br></br>-Shade: {{crop_list[0]['shade_ok']}}
-      <br></br>-Soil type: {{crop_list[0]['soil_type']}}
-      <br></br>-Soil pH: {{crop_list[0]['soil_ph']}}
-      <br></br>-Difficulty level: {{crop_list[0]['difficulty']}}
-    </h3>
+      <h1 class="text-info">Here are your results!</h1>
+      <br></br>
 
 
-  {% endif %}
+      <h7 class="text-warning">From your zipcode, your plant hardiness zone is {{plant_hardiness_zone}}.
+        <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+        data-toggle="tooltip" data-placement="right" 
+        title="Here is an image of the plant hardiness zones in the US for reference. 
+        <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
+        <br></br>These results are based on your inputs: 
+        <br></br>Planting in {{crop_list[0]['planting_month']}} |
+        Shade: {{crop_list[0]['shade_ok']}} |
+        Soil type: {{crop_list[0]['soil_type']}} |
+        Soil pH: {{crop_list[0]['soil_ph']}} |
+        Difficulty level: {{crop_list[0]['difficulty']}}
+      </h7>
 
-  {% for crop in crop_list %}
 
-  
-    <div class="card" style="width: 80rem;">
-      <img src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}" 
-      style="width: 20rem;">
+    {% endif %}
 
-      <div class="card-body">
-        <h4>Name: {{crop['name']}}</h4>
+  </div>
+
+  <br></br>
+
+  <div class="card-columns">
+    {% for crop in crop_list %}
+
+      <div class="accordion" id="accordionExample">
+        <div class="card" style="width: 25rem;">
+          <img src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}" 
+          style="width: 20rem;">
+
+    {#         <div class="card-body"> #}
+          <h4>Name: {{crop['name']}}</h4>
+    {#         </div> #}
+
+          <ul class="list-group list-group-flush">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne{{crop['crop_id']}}" aria-expanded="false" aria-controls="collapseOne{{crop['crop_id']}}">How to plant: </button>
+            <div id="collapseOne{{crop['crop_id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <li class="list-group-item">How to grow from seed: {{crop['growing_from_seed']}}</li>
+                <li class="list-group-item">How to transplant: {{crop['transplanting']}}</li>
+                <li class="list-group-item">Spacing: {{crop['spacing']}}</li>
+                <li class="list-group-item">Watering: {{crop['watering']}}</li>
+                <li class="list-group-item">Feeding: {{crop['feeding']}}</li>
+              </div>
+            </div>
+
+{#           <ul class="list-group list-group-flush"> #}
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo{{crop['crop_id']}}" aria-expanded="false" aria-controls="collapseTwo{{crop['crop_id']}}">When to plant where:</button>
+            <div id="collapseTwo{{crop['crop_id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Your zone was {{plant_hardiness_zone}}
+                2: {{zone_month_dictionary[crop['crop_id']][2]|join(', ')}}<br></br>
+                3: {{zone_month_dictionary[crop['crop_id']][3]|join(', ')}}<br></br>
+                4: {{zone_month_dictionary[crop['crop_id']][4]|join(', ')}}<br></br>
+                5: {{zone_month_dictionary[crop['crop_id']][5]|join(', ')}}<br></br>
+                6: {{zone_month_dictionary[crop['crop_id']][6]|join(', ')}}<br></br>
+                7: {{zone_month_dictionary[crop['crop_id']][7]|join(', ')}}<br></br>
+                8: {{zone_month_dictionary[crop['crop_id']][8]|join(', ')}}<br></br>
+                9: {{zone_month_dictionary[crop['crop_id']][9]|join(', ')}}<br></br>
+                10: {{zone_month_dictionary[crop['crop_id']][10]|join(', ')}}<br></br>
+                11: {{zone_month_dictionary[crop['crop_id']][11]|join(', ')}}<br></br>
+              </div>
+            </div>
+
+{#           <ul class="list-group list-group-flush"> #}
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree{{crop['crop_id']}}" aria-expanded="false" aria-controls="collapseThree{{crop['crop_id']}}">Preferences and difficulty:</button>
+              <div id="collapseThree{{crop['crop_id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <li class="list-group-item">
+                  Shade preference: {{shade_difficulty_dictionary[crop['crop_id']]['shade_ok']}}</li>
+                  <li class="list-group-item">
+                  Soil type preference: {{soil_dictionary[crop['crop_id']]['soil_type']|join(', ')}}</li>
+                  <li class="list-group-item">
+                  Soil pH preference: {{soil_dictionary[crop['crop_id']]['soil_ph']|join(', ')}}</li>
+                  <li class="list-group-item">
+                  Difficulty: {{shade_difficulty_dictionary[crop['crop_id']]['difficulty']}}</li>
+                  <li class="list-group-item">
+                </div>
+              </div>
+{#             Crop ID: {{crop['crop_id']}}</li> #}
+          </ul>
+
+      {#    <form action="/create-favorite" method="POST" class="add-favorite">
+          <input type="hidden" name="crop_id" value="{{crop['crop_id']}}" id="crop_id-field"/>
+      #}   
+          <div class="card-body">
+            <button type="submit" class="btn btn-info" aria-pressed="true" 
+            onclick="addFavorite({{crop['crop_id']}})">Add to favorites</button>
+          </div>
+
+        </div>
       </div>
-
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">How to grow from seed: {{crop['growing_from_seed']}}</li>
-        <li class="list-group-item">How to transplant: {{crop['transplanting']}}</li>
-        <li class="list-group-item">Spacing: {{crop['spacing']}}</li>
-        <li class="list-group-item">Watering: {{crop['watering']}}</li>
-        <li class="list-group-item">Feeding: {{crop['feeding']}}</li>
-        <li class="list-group-item">Planting months by plant hardiness zone:<br></br>
-          2: {{zone_month_dictionary[crop['crop_id']][2]|join(', ')}}<br></br>
-          3: {{zone_month_dictionary[crop['crop_id']][3]|join(', ')}}<br></br>
-          4: {{zone_month_dictionary[crop['crop_id']][4]|join(', ')}}<br></br>
-          5: {{zone_month_dictionary[crop['crop_id']][5]|join(', ')}}<br></br>
-          6: {{zone_month_dictionary[crop['crop_id']][6]|join(', ')}}<br></br>
-          7: {{zone_month_dictionary[crop['crop_id']][7]|join(', ')}}<br></br>
-          8: {{zone_month_dictionary[crop['crop_id']][8]|join(', ')}}<br></br>
-          9: {{zone_month_dictionary[crop['crop_id']][9]|join(', ')}}<br></br>
-          10: {{zone_month_dictionary[crop['crop_id']][10]|join(', ')}}<br></br>
-          11: {{zone_month_dictionary[crop['crop_id']][11]|join(', ')}}<br></br>
-        </li>
-        <li class="list-group-item">
-        Shade preference: {{shade_difficulty_dictionary[crop['crop_id']]['shade_ok']}}</li>
-        <li class="list-group-item">
-        Soil type preference: {{soil_dictionary[crop['crop_id']]['soil_type']|join(', ')}}</li>
-        <li class="list-group-item">
-        Soil pH preference: {{soil_dictionary[crop['crop_id']]['soil_ph']|join(', ')}}</li>
-        <li class="list-group-item">
-        Difficulty: {{shade_difficulty_dictionary[crop['crop_id']]['difficulty']}}</li>
-        <li class="list-group-item">
-        Crop ID: {{crop['crop_id']}}</li>
-      </ul>
-
-{#    <form action="/create-favorite" method="POST" class="add-favorite">
-      <input type="hidden" name="crop_id" value="{{crop['crop_id']}}" id="crop_id-field"/>
- #}   
-      <div class="card-body">
-        <button type="submit" class="btn btn-info" aria-pressed="true" 
-        onclick="addFavorite({{crop['crop_id']}})">Add to favorites</button>
-      </div>
-
-    </div>
-
-  
+    {% endfor%}
+   </div> 
     <br></br>
-  {% endfor%}
+  
 
   <div class="container">
     <div class="row">
