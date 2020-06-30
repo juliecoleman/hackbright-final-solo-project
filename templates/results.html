@@ -8,31 +8,50 @@
 
   <h5>{{crop_list}}</h5> #}
 
-  <div class="card" style="width: 50rem;">
+  <div class="container border rounded-pill plaque">
 
     {% if not crop_list %}
+      <div class="row">
+        <div class="col-3 text-center">
 
-      <h1 class="text-info">Sorry, there were no results matching your search</h1>
-      <br></br>
+          <img src="/static/img/Garden_Knowledge green.png" style="width: 10rem;">
+
+        </div>
+        <div class="col-9 text-center">
+        <br></br>
+        <h1>Sorry, there are no results matching your search</h1>
+        </div>
+
+      </div>
 
     {% else %}
+      <div class="row">
+        <div class="col-3 text-center">
+{#         <br></br> #}
+        <img src="/static/img/Garden_Knowledge green.png" style="width: 10rem;">
 
-      <h1 class="text-info">Here are your results!</h1>
-      <br></br>
+        </div>
+        <div class="col-3 text-center align-middle">  
 
+        <h1>Here are your results!</h1>
+        </div>
+        <div class="col-6 text-middle">
+        <br></br>  
+        <h7>From your zipcode, your plant hardiness zone is {{plant_hardiness_zone}}.
+          <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
+          data-toggle="tooltip" data-placement="right" 
+          title="Here is an image of the plant hardiness zones in the US for reference. 
+          <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
+          <br></br>These results are based on your inputs: 
+          <br></br>Planting in {{crop_list[0]['planting_month']}} |
+          Shade: {{crop_list[0]['shade_ok']}} |
+          Soil type: {{crop_list[0]['soil_type']}} |
+          Soil pH: {{crop_list[0]['soil_ph']}} |
+          Difficulty level: {{crop_list[0]['difficulty']}}
+        </h7>
+        </div>
 
-      <h7 class="text-warning">From your zipcode, your plant hardiness zone is {{plant_hardiness_zone}}.
-        <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-        data-toggle="tooltip" data-placement="right" 
-        title="Here is an image of the plant hardiness zones in the US for reference. 
-        <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
-        <br></br>These results are based on your inputs: 
-        <br></br>Planting in {{crop_list[0]['planting_month']}} |
-        Shade: {{crop_list[0]['shade_ok']}} |
-        Soil type: {{crop_list[0]['soil_type']}} |
-        Soil pH: {{crop_list[0]['soil_ph']}} |
-        Difficulty level: {{crop_list[0]['difficulty']}}
-      </h7>
+      </div>
 
 
     {% endif %}
@@ -45,12 +64,12 @@
     {% for crop in crop_list %}
 
       <div class="accordion" id="accordionExample">
-        <div class="card" style="width: 25rem;">
-          <img src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}" 
-          style="width: 20rem;">
+        <div class="card col-12 text-center" style="background-color: #FAFCEE">
+          <img class="card-img-top"
+          src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}">
 
     {#         <div class="card-body"> #}
-          <h4>Name: {{crop['name']}}</h4>
+          <h4>{{crop['name']}}</h4>
     {#         </div> #}
 
           <ul class="list-group list-group-flush">
@@ -112,23 +131,26 @@
         </div>
       </div>
     {% endfor%}
-   </div> 
-    <br></br>
-  
+   </div>
 
+  <br></br>
+  
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-5 text-center border rounded-pill plaque-2">
 
-        <h2 class="text-white">Ready to see all your favorites?</h2>
+        <h2>Ready to see all your favorites?</h2>
         <form action="/favorites">
           <button type="submit" class="btn btn-info btn-lg">Favorites</button>
         </form>
       </div>
 
-      <div class="col-6 text-left">
+      <div class="col-2">
+      </div>
 
-        <h2 class="text-white">Return to homepage</h2>
+      <div class="col-5 text-center border rounded-pill plaque">
+
+        <h2>Return to homepage</h2>
         <form action="/">
           <button type="submit" class="btn btn-info btn-lg">Homepage</button>
         </form>

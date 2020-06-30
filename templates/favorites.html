@@ -1,12 +1,21 @@
 {% extends 'base.html' %}
 
 {% block body %}
+  <div class="container border rounded-pill plaque-2">
+    <div class="row">
+    <div class="col-3 text-center">
 
-  <div class="card" style="width: 50rem;">
+      <img src="/static/img/Garden_Knowledge green.png" style="width: 8rem;">
 
-    <h1 class="text-info">Here are your favorites!</h1>
+    </div>
+    <div class="col-9 text-center">
+    <br></br>
+    <h1>Here are your favorites!</h1>
+    </div>}
 
+    </div>
   </div>
+
 
   <br></br>
 
@@ -25,9 +34,9 @@
     {% for crop in crop_favorite_list %}
 
       <div class="accordion" id="accordionExample">
-        <div class="card" style="width: 25rem;">
-          <img src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}" 
-          style="width: 20rem;">
+        <div class="card col-12 text-center" style="background-color: #FAFCEE">
+          <img class="card-img-top"
+          src="https://res-4.cloudinary.com/do6bw42am/image/upload/c_scale,f_auto,h_300/v1/{{crop['image_url']}}">
 
     {#         <div class="card-body"> #}
           <h4>Name: {{crop['name']}}</h4>
@@ -85,13 +94,23 @@
       </div>
     {% endfor%}
    </div> 
-
-
-  <h2 class="text-white">Return to homepage</h2>
-  <form action="/">
-    <button type="submit" class="btn btn-info btn-lg">Homepage</button>
-  </form>
-
+   
   <br></br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+      </div>
+      <div class="col-5 text-center border rounded-pill plaque-2">
+        <h2>Return to homepage</h2>
+        <form action="/">
+          <button type="submit" class="btn btn-info btn-lg">Homepage</button>
+        </form>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+  </div>
+
 
 {% endblock %}
