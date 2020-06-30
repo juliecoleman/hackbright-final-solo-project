@@ -1,7 +1,13 @@
 body {
   background-image: url('/static/img/background-6.jpg');
-  font-family: cursive;
+  font-family: 'Montserrat', cursive;
   padding-top: 150px; 
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.alert-custom {
+  background-color: #FAFCEE;
 }
 
 .text-info {
@@ -12,22 +18,32 @@ body {
   background-color: #7EA3B0;
 }
 
+.btn-success {
+  background-color: #2F572A;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 #create-account {
   display: none;
 }
 
 .tooltip {
-  font-family: cursive;
-  font-size: 16px;
+  font-family: 'Montserrat', cursive;
+  font-size: 18px;
 }
 
 .tooltip-inner {
-  background-color: #00acd6;
-  max-width: 600px;
+  background-color: #7EA3B0;
+  max-width: 703px;
 }
 
-.tooltip .arrow:before {
-    border-right-color: #00acd6;
+.tooltip .arrow::before {
+  border-top-color: #7EA3B0;
+  border-bottom-color: #7EA3B0;
+  border-left-color: #7EA3B0;
+  border-right-color: #7EA3B0;
 }
 
 .material-icons {
@@ -42,4 +58,9 @@ body {
 .plaque-2 {
   padding: 15px;
   background-color: #FAFCEE
+}
+
+.border-custom {
+  border-width: 2px;
+  border-color: #2F572A;
 }

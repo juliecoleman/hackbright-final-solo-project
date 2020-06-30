@@ -78,11 +78,9 @@ def add_favorite():
     """Add a new favorite crop to the 'database'."""
 
     crop_id = request.form.get('crop_id')
-    print('PRINTING CROP ID********', crop_id)
     gardener_id = session['gardener_id']
 
     already_favorite_crop = crud.check_crop_favorites(crop_id, gardener_id)
-    print('PRINTING IF ALREADY FAVORITE*******', already_favorite_crop)
     if already_favorite_crop:
         return "This crop has already been added to favorites."
 

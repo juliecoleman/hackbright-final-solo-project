@@ -17,9 +17,13 @@
   <!-- Bootstrap show/hide password -->
   <script src="bootstrap-show-password.js"></script>
 
+  <!-- Google font Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
   <!-- Our custom style -->
   <link rel="stylesheet"
   href="/static/css/style.css">
+
 
 
 <!--     <script crossorigin src="https://unpkg.com/react@16/umd/
@@ -46,7 +50,6 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <label for="password">password</label>&nbsp;
           <input type = "password" class="form-control form-control col-6" data-eye-class="material-icons" data-eye-open-class="visibility" data-eye-close-class="visibility_off" data-eye-class-position-inside="true" id="password" name="password">   
-
           <button type="submit" class="btn btn-info">Log In</button>
         </form>
       </div>
@@ -65,19 +68,23 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <label for="password">password</label>&nbsp;
           <input type = "password" class="form-control form-control col-6" data-eye-class="material-icons" data-eye-open-class="visibility" data-eye-close-class="visibility_off" data-eye-class-position-inside="true" id="password" data-toggle="password" name="password">   
-
           <button type="submit" class="btn btn-info" onClick="showLogIn()">Create Account</button>
         </form>
       </div>
+
     </nav>
   {% endif %}
 
+
   {%if "gardener_id" in session %}
     <nav class="navbar navbar-light fixed-top" style="background-color: #FAFCEE">
+
       <img src="/static/img/Garden_Knowledge green.png" style="width: 5rem;">
+
       <form action="/logout">
         <button type="submit" class="btn btn-info">Log out</button>
       </form>
+
     </nav>
   {% endif %}
 
@@ -85,10 +92,10 @@
 
   {% for msg in get_flashed_messages() %}
 
-    <div class="alert alert-warning">
+    <div class="alert alert-custom">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-    </button>
+        </button>
         {{ msg }}
     </div>
 

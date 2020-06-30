@@ -4,6 +4,7 @@
 
   <div class="container border rounded-pill" style="background-color: #FAFCEE">
     <div class="row">
+
       <div class="col-3 text-center">
         <br></br>
         <br></br>
@@ -14,31 +15,29 @@
 
       <div class="col-6 text-center">
         <br></br>
-        <p>
+        <h5>
           We know that gardening can be a lot of trial and error to know what works.
-          We are here to help! Fill in your gardening information to receive 
+          We are here to help!<br></br>
+          Fill in your gardening information to receive 
           personalized suggestions for your garden.
-        </p>
-
+        </h5>
         <br></br>
         <section>
           <h2>Your gardening information</h2>
+          <h6>
           <form action="/results" id="query">
-
             <div class="form-group row justify-content-center align-items-center">
-              <label for="zipcode">Please enter your zipcode</label>
+              <label for="zipcode">What is your zipcode?</label>
               <input type="text" class="form-control form-control-sm col-4" 
               id="zipcode-field" name="zipcode">
               <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-              data-toggle="tooltip" data-placement="right" title="Providing your 
+              data-toggle="tooltip" data-placement="bottom" title="Providing your 
               zipcode is highly suggested as it is used to determine your USDA 
               plant hardiness zone. The USDA plant hardiness zone is based on 
               annual minimum winter temperatures and can help determine which 
               garden vegetables will do best in your location and month of 
               sowing.">
             </div>
-
-
             <label for="planting_month">What month will you be planting?</label>
             <select name="planting_month" class="custom-select custom-select-sm 
             col-4">
@@ -57,13 +56,11 @@
               <option value="unknown">unknown</option>
             </select>
             <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-            data-toggle="tooltip" data-placement="right" title="Providing your 
+            data-toggle="tooltip" data-placement="bottom" title="Providing your 
             planting month is highly suggested as seasonal climate changes, 
             such as a transition from warm to cool versus cool to warm weather, 
             often affect which garden vegetables will do best.">
-            
-            <br></br>
-            
+            <br></br>           
             <label for="shade_ok">Will your plants be in the shade?</label>
             <select name="shade_ok" class="custom-select custom-select-sm col-4">
               <option value="yes">yes</option>
@@ -71,13 +68,11 @@
               <option value="unknown">unknown</option>
             </select>
             <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-            data-toggle="tooltip" data-placement="right" title="Some 
+            data-toggle="tooltip" data-placement="bottom" title="Some 
             garden vegetables thrive in direct sun and others thrive in shade. 
             Providing information on whether your plants will be in shade or 
             sun will help narrow down suggestions.">
-            
             <br></br>
-            
             <label for="soil_type">Is the soil type loamy or sandy?</label>
             <select name="soil_type" class="custom-select custom-select-sm col-4">
               <option value="loamy">loamy</option>
@@ -86,7 +81,7 @@
               <option value="unknown">unknown</option>
             </select>
             <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-            data-toggle="tooltip" data-placement="right" title="There are three
+            data-toggle="tooltip" data-placement="bottom" title="There are three
             basic types of soils: sandy, clay, and silt. Most garden 
             vegetables prefer a loamy and sandy soil versus clay or silt soils.
             If your soil type is clay or silt, it is highly suggested
@@ -95,9 +90,7 @@
             so and get gardenings suggestions accordingly, or you can add 
             organic matter to make your soil type be sandy and loamy to 
             support other vegetable types.">
-
             <br></br>
-            
             <label for="soil_ph">What is the pH of the soil?</label>
             <select name="soil_ph" class="custom-select custom-select-sm col-4">
               <option value="acidic">acidic (ph 4 to 5.5)</option>
@@ -106,16 +99,14 @@
               <option value="unknown">unknown</option>
             </select>
             <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-            data-toggle="tooltip" data-placement="right" title="Different garden
+            data-toggle="tooltip" data-placement="bottom" title="Different garden
             vegetables thrive in different soil pHs. Soil pH often affects what 
             nutrients are available to a plant. Different plants have different 
             nutrient requirements. Therefore, it is suggested to test your soil 
             pH to determine what will grow best in your soil. Soil pH can be readily
             increased with the addition of lime but is more difficult to decrease
             with the addition of sulfur.">
-            
             <br></br>
-            
             <label for="difficulty">What level of difficulty would you like?</label>
             <select name="difficulty" class="custom-select custom-select-sm col-4">
               <option value="easy">easy</option>
@@ -124,15 +115,14 @@
               <option value="unknown">unknown</option>
             </select>
             <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-            data-toggle="tooltip" data-placement="right" title="Some garden 
+            data-toggle="tooltip" data-placement="bottom" title="Some garden 
             vegetables are more susceptible than others and require more care 
             and maintenance such as additional fertilization or protection 
             against pests and diseases.">
-            
             <br></br>
-            
             <button type="submit" class="btn btn-info btn-lg">Search</button>
           </form>
+          </h6>
         </section>
         <br></br>
       </div>
@@ -152,17 +142,10 @@
             </div>
           {% endif %}
       </div>
+
     </div>
   </div>
 
-  
-  
-
-
   <br></br>
-  <br></br>
-  <br></br>
-
-  
 
 {% endblock %}
