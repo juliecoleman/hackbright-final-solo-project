@@ -36,7 +36,7 @@
           <br></br>
           <h5>From your zipcode, your plant hardiness zone is {{plant_hardiness_zone}}.
             <img src="/static/img/questionmark-1.jpg" style="width:1.5rem;" 
-            data-toggle="tooltip" data-placement="bottom" 
+            data-toggle="tooltip" data-placement="left" 
             title="Here is an image of the plant hardiness zones in the US for reference. 
             <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
             <br></br>These results are based on your additional inputs: 
@@ -69,8 +69,8 @@
             <button class="btn btn-success col-6" type="button" data-toggle="collapse" data-target="#collapseOne{{crop['crop_id']}}" aria-expanded="false" aria-controls="collapseOne{{crop['crop_id']}}">How to plant</button>
             <div id="collapseOne{{crop['crop_id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
-                <li class="list-group-item">How to grow from seed: {{crop['growing_from_seed']}}</li>
-                <li class="list-group-item">How to transplant: {{crop['transplanting']}}</li>
+                <li class="list-group-item">Growing from seed: {{crop['growing_from_seed']}}</li>
+                <li class="list-group-item">Transplanting: {{crop['transplanting']}}</li>
                 <li class="list-group-item">Spacing: {{crop['spacing']}}</li>
                 <li class="list-group-item">Watering: {{crop['watering']}}</li>
                 <li class="list-group-item">Feeding: {{crop['feeding']}}</li>
