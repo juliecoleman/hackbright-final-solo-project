@@ -1,4 +1,4 @@
-![alt text](https://github.com/juliecoleman/hackbright-final-solo-project/static/img/Garden_Knowledge-green.png)
+![alt text](https://github.com/juliecoleman/hackbright-final-solo-project/blob/master/static/img/Garden_Knowledge-green.png?raw=true)
 
 ###### Garden knowledge provides personalized gardening recommendations and information to help with garden success. Garden Knowledge begins by using data from the USDA’s plant hardiness zones via an API, Frostline, to determine the local growing climate based on the user’s zip code. Then, from additional optional information given by the user for planting month, available sunlight, soil conditions, and desired difficulty, Garden Knowledge gives recommendations of vegetables to grow and how from a gardening API, Harvest Helper, based on data conditions collected and designed for this project.  The user has the option to save favorite vegetables and retrieve back a list of their favorites to reference when they are ready to start gardening.
 
