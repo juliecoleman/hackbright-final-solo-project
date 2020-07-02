@@ -5,23 +5,22 @@
 ------------------
 
 ## Tech Stack
-###### Python, JavaScript, SQLAlchemy, PostgreSQL, Flask, JQuery, AJAX, Bootstrap
+###### Python, JavaScript, JQuery, AJAX, SQLAlchemy, PostgreSQL, Flask, Bootstrap
 
 -------
 ## Features
-##### **User account**
-###### User creates and account and logs in on the homepage navbar.
 
-
-### User query
-###### User selects options to query for gardening recommendations, including zipcode (to determine USDA plant hardiness zone), planting month, shade, soil type, soil ph, and difficulty level.
+### User account login and query
+###### User creates an account and logs in on the homepage navbar. User selects options to query for gardening recommendations. Options include zipcode (to determine USDA plant hardiness zone), planting month, shade, soil type, soil ph, and difficulty level.
+![alt text](https://github.com/juliecoleman/hackbright-final-solo-project/blob/master/static/img/homepage.PNG?raw=true)
 
 ### User results
-###### User receives back their plant hardiness zone and suggested vegetables for their garden based on their query. Each vegetable has details on: how to plant (from HarvestHelper), when to plant for any given plant hardiness zone, what its preferences for soil and shade are, and what its difficulty is.
-
+###### User receives back their plant hardiness zone based on their zipcode. User also receives suggested vegetables for their garden based on the plant hardiness zone and the other query options selected. Each vegetable has selectable details on: how to plant (from the API Harvest Helper), when to plant for any given plant hardiness zone, preferences for soil and shade, and difficulty level.
+![alt text](https://github.com/juliecoleman/hackbright-final-solo-project/blob/master/static/img/results.PNG?raw=true)
 
 ### User favorites
-###### User saves favorite vegetables from their results. User can perform a new query or go to their favorites list.
+###### User saves favorite vegetables from their results. User can perform a new query or go to their favorites list that has a compilation of all their favorites vegetables and their selectable details.
+![alt text](https://github.com/juliecoleman/hackbright-final-solo-project/blob/master/static/img/favorites.PNG?raw=true)
 
 -------------------
 
