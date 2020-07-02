@@ -11,11 +11,11 @@
 ## Features
 
 ### User account login and query
-###### User creates an account and logs in on the homepage navbar. User selects options to query for gardening recommendations. Options include zipcode (to determine USDA plant hardiness zone), planting month, shade, soil type, soil ph, and difficulty level.
+###### User creates an account and logs in on the homepage navbar. User selects options to query for gardening recommendations. User can hover over tooltips to receive tips on what to select for each query option.
 ![alt text](https://github.com/juliecoleman/hackbright-final-solo-project/blob/master/static/img/homepage.PNG?raw=true)
 
 ### User results
-###### User receives back their plant hardiness zone based on their zipcode. User also receives suggested vegetables for their garden based on the plant hardiness zone and the other query options selected. Each vegetable has selectable details on: how to plant (from the API Harvest Helper), when to plant for any given plant hardiness zone, preferences for soil and shade, and difficulty level.
+###### User receives back their plant hardiness zone based on their zipcode. User can hover over a tooltip to see a map of plant hardiness zones across the US. User also receives suggested vegetables for their garden based on the plant hardiness zone and the other query options selected. Each vegetable has selectable details on: how to plant (from the API Harvest Helper), when to plant for any given plant hardiness zone, preferences for shade and soil, and difficulty level.
 ![alt text](https://github.com/juliecoleman/hackbright-final-solo-project/blob/master/static/img/results.PNG?raw=true)
 
 ### User favorites
