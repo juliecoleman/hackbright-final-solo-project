@@ -3,11 +3,12 @@
 {% block body %}
 
 {#   <div id="app"></div> #}
+{#   <div class="container plaque">
+  <h5>{{plant_hardiness_zone}}</h5>
 
-{#   <h5>{{plant_hardiness_zone}}</h5>
-
-  <h5>{{crop_list}}</h5> #}
-
+  <h5>{{crop_list}}</h5>
+  </div>
+ #}
   <div class="container border rounded-pill plaque">
 
     {% if not crop_list %}
@@ -40,11 +41,11 @@
             title="Here is an image of the plant hardiness zones in the US for reference. 
             <img src='/static/img/plant-hardiness-zones-2.jpg' /> Source: USDA-ARS and Oregon State University">
             <br></br>These results are based on your additional inputs: 
-            <br></br>Planting month: {{crop_list[0]['planting_month']}} |
-            Shade: {{crop_list[0]['shade_ok']}} |
-            Soil type: {{crop_list[0]['soil_type']}} |
-            Soil pH: {{crop_list[0]['soil_ph']}} |
-            Difficulty level: {{crop_list[0]['difficulty']}}
+            <br></br>Planting month: {{planting_month}} |
+            Shade: {{shade_ok}} |
+            Soil type: {{soil_type}} | 
+            Soil pH: {{soil_ph}} |
+            Difficulty level: {{difficulty}}
           </h5>
         </div>
 

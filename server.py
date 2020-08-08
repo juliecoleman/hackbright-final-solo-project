@@ -145,6 +145,8 @@ def results():
 
     return render_template('results.html', 
         plant_hardiness_zone=plant_hardiness_zone, crop_list=crop_list,
+        shade_ok=shade_ok, planting_month=planting_month, soil_type=soil_type,
+        soil_ph=soil_ph, difficulty=difficulty,
         shade_difficulty_dictionary=shade_difficulty_dictionary, 
         zone_month_dictionary=zone_month_dictionary, 
         soil_dictionary=soil_dictionary)
